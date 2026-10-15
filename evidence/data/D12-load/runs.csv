@@ -1,0 +1,17 @@
+index,input,sha256,result,seconds,env,warmup
+0,sim0:fruit,,ok,22.889291,real-board+sim-devices; live-before=flag,0
+1,sim0:flag,,ok,27.392926,real-board+sim-devices; live-before=flag,0
+2,sim0:fruit,,ok,23.392195,real-board+sim-devices; live-before=flag,0
+3,sim0:flag,,ok,29.400830,real-board+sim-devices; live-before=flag,0
+4,sim50:fruit,,ok,22.882901,real-board+sim-devices; live-before=flag,0
+5,sim50:flag,,ok,23.374003,real-board+sim-devices; live-before=flag,0
+6,sim50:fruit,,ok,35.696427,real-board+sim-devices; live-before=flag,0
+7,sim50:flag,,ok,33.422475,real-board+sim-devices; live-before=flag,0
+8,sim200:fruit,,ok,25.399440,real-board+sim-devices; live-before=flag,0
+9,sim200:flag,,ok,29.675198,real-board+sim-devices; live-before=flag,0
+10,sim200:fruit,,ok,23.372733,real-board+sim-devices; live-before=flag,0
+11,sim200:flag,,ok,23.379968,real-board+sim-devices; live-before=flag,0
+12,sim500:fruit,,ok,20.864079,real-board+sim-devices; live-before=flag,0
+13,sim500:flag,,ok,33.424762,real-board+sim-devices; live-before=flag,0
+14,sim500:fruit,,ok,23.376885,real-board+sim-devices; live-before=flag,0
+15,sim500:flag,,ok,29.671267,real-board+sim-devices; live-before=flag,0

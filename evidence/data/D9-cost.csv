@@ -1,0 +1,12 @@
+item,spec,qty,unit_price,currency,tax,source,date_checked,status
+Board,Terasic DE25-Nano (P0804) Agilex 5 SoC FPGA kit incl. microSD and power supply,1,207.00,USD,not stated (US list),"terasic.com academic price (user, paid)",2026-10-15,ACTUAL paid (user report 2026-10-15; USD assumed for '$')
+Board (alt listing),DE25-Nano P0804,1,352.76,SGD,before GST,DigiKey Singapore P0804,2026-10-15,list price (web)
+Board (alt listing),DE25-Nano P0804,1,217.19,EUR,before VAT,DigiKey Spain P0804,2026-10-15,list price (web)
+microSD card,59 GB,1,0,-,-,included with the DE25-Nano kit (user),2026-10-15,included
+Power supply,board DC supply,1,0,-,-,included with the DE25-Nano kit (user),2026-10-15,included
+Camera adapter / FPC,none needed,0,0,-,-,user,2026-10-15,none
+Camera,Arducam IMX519 16MP autofocus MIPI module,1,39.00,USD,incl. UK VAT,paid by user (platform/date not given),2026-10-15,ACTUAL paid (user report 2026-10-15; USD assumed for '$')
+USB webcam,UGREEN 1080P USB webcam model 15728,1,99.80,MYR,incl. VAT,"Lazada/Shopee, paid by user",2026-10-15,ACTUAL paid (user report 2026-10-15; USD assumed for '$')
+Ethernet cable,UGREEN Cat6 patch cable 1000 Mbps 2 m,1,6.40,MYR,incl. VAT,"Lazada/Shopee, paid by user",2026-10-15,ACTUAL paid (user report 2026-10-15; USD assumed for '$')
+Host option A,Raspberry Pi 5 4GB (list) as station host,1,110.00,USD,not stated,secondary reports (raspberry.tips; gigazine; techspot) not verified on raspberrypi.com,2026-10-15,list price (web) - verify; plus PSU/SD/case not counted
+Host option B,PC,1,0,-,-,lab PC already exists; any machine (preferably Linux) suffices (user),2026-10-15,existing

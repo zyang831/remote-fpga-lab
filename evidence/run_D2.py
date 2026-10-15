@@ -3,7 +3,7 @@ import sys, time, requests, harness as h
 R = "/home/<user>/edge-ai-demo"; L = "/home/<user>/fyp/legacy/ota_test_artifacts_2026-07"
 BITS = [f"{R}/demo/webui/1-bitstream/{n}.core.rbf" for n in ("led-bouncing", "led-johnson", "ghrd", "edge-ai-dla")] + \
        [f"{L}/CoreDLA_NoSoftmax/output_design.core.rbf", f"{L}/CoreDLA_Softmax/output_design.core.rbf"]
-mode, n = sys.argv[1], int(sys.argv[2]); env = open(f"{h.DATA}/env.md").readline().strip()[-19:]
+mode, n = sys.argv[1], int(sys.argv[2]); env = open(f"{h.DATA}/env.md").readline().strip()
 j = h.join()
 def fresh(need):
     global j

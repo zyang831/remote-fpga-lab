@@ -1,0 +1,1 @@
+2026-10-15 journal check after the repair (06:14 UTC) up to 10:29 UTC: FATAL lines 0, 'Scheduled restart' lines 0 (covers D2, D3, D4, D6, D8, D10, D12, D2b, D6-dla series).

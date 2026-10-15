@@ -1,0 +1,2 @@
+time,label,addr,rtt_min_ms,rtt_avg_ms,rtt_max_ms,rtt_mdev_ms,loss_pct,pc_to_board_mbit,board_to_pc_mbit,seconds_each
+2026-10-15 16:39:57,direct-tailscale,<TAILNET-IP>,2.100,2.838,5.191,0.656,0,174.8,180.2,8.0

@@ -1,0 +1,51 @@
+0 led-bouncing.core.rbf ('ok', 10.827523997053504)
+gap 0.67
+1 led-johnson.core.rbf ('ok', 8.297362006269395)
+gap 4.24
+2 ghrd.core.rbf ('ok', 5.033014826476574)
+gap 3.82
+3 edge-ai-dla.core.rbf ('ok', 6.291331535205245)
+gap 1.28
+4 CoreDLA_NoSoftmax ('ok', 9.069198423996568)
+gap 2.48
+5 CoreDLA_Softmax ('ok', 8.80616657808423)
+gap 2.25
+6 led-bouncing.core.rbf ('ok', 6.790365961380303)
+gap 3.26
+7 led-johnson.core.rbf ('ok', 7.0496196104213595)
+gap 3.94
+8 ghrd.core.rbf ('ok', 5.290803830139339)
+gap 0.47
+9 edge-ai-dla.core.rbf ('ok', 10.815411646850407)
+gap 0.14
+10 CoreDLA_NoSoftmax ('ok', 9.059238993562758)
+gap 4.18
+11 CoreDLA_Softmax ('ok', 4.78286895621568)
+gap 2.16
+12 led-bouncing.core.rbf ('ok', 9.049516916275024)
+gap 3.81
+13 led-johnson.core.rbf ('ok', 6.5397038012743)
+gap 0.01
+14 ghrd.core.rbf ('ok', 9.049039466306567)
+gap 2.23
+15 edge-ai-dla.core.rbf ('ok', 7.04500019736588)
+gap 3.61
+16 CoreDLA_NoSoftmax ('ok', 6.539691702462733)
+gap 1.14
+17 CoreDLA_Softmax ('ok', 9.312172240577638)
+gap 4.73
+18 led-bouncing.core.rbf ('ok', 6.2893588142469525)
+gap 4.51
+19 led-johnson.core.rbf ('ok', 8.798830118961632)
+gap 0.15
+20 ghrd.core.rbf ('ok', 5.0391972959041595)
+gap 0.13
+21 edge-ai-dla.core.rbf ('ok', 5.03702955879271)
+gap 2.71
+22 CoreDLA_NoSoftmax ('ok', 8.55945762526244)
+gap 4.70
+23 CoreDLA_Softmax ('ok', 4.278723486699164)
+gap 1.91
+24 led-bouncing.core.rbf ('ok', 8.296817820519209)
+gap 1.08
+{'runs': 24, 'failures': 0, 'fail_upper95': 0.11734615615494877, 'n': 24, 'mean': 7.296663458333334, 'median': 7.0473099999999995, 'sd': 1.8093482585332497, 'min': 4.278723, 'max': 10.815412}

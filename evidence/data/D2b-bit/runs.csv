@@ -1,0 +1,26 @@
+index,input,sha256,result,seconds,env,warmup
+0,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,10.827524,# Environment (auto-captured 2026-10-15 13:56:57),1
+1,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,8.297362,# Environment (auto-captured 2026-10-15 13:56:57),0
+2,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,5.033015,# Environment (auto-captured 2026-10-15 13:56:57),0
+3,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,6.291332,# Environment (auto-captured 2026-10-15 13:56:57),0
+4,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,9.069198,# Environment (auto-captured 2026-10-15 13:56:57),0
+5,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,8.806167,# Environment (auto-captured 2026-10-15 13:56:57),0
+6,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,6.790366,# Environment (auto-captured 2026-10-15 13:56:57),0
+7,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,7.049620,# Environment (auto-captured 2026-10-15 13:56:57),0
+8,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,5.290804,# Environment (auto-captured 2026-10-15 13:56:57),0
+9,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,10.815412,# Environment (auto-captured 2026-10-15 13:56:57),0
+10,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,9.059239,# Environment (auto-captured 2026-10-15 13:56:57),0
+11,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,4.782869,# Environment (auto-captured 2026-10-15 13:56:57),0
+12,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,9.049517,# Environment (auto-captured 2026-10-15 13:56:57),0
+13,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,6.539704,# Environment (auto-captured 2026-10-15 13:56:57),0
+14,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,9.049039,# Environment (auto-captured 2026-10-15 13:56:57),0
+15,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,7.045000,# Environment (auto-captured 2026-10-15 13:56:57),0
+16,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,6.539692,# Environment (auto-captured 2026-10-15 13:56:57),0
+17,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,9.312172,# Environment (auto-captured 2026-10-15 13:56:57),0
+18,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,6.289359,# Environment (auto-captured 2026-10-15 13:56:57),0
+19,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,8.798830,# Environment (auto-captured 2026-10-15 13:56:57),0
+20,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,5.039197,# Environment (auto-captured 2026-10-15 13:56:57),0
+21,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,5.037030,# Environment (auto-captured 2026-10-15 13:56:57),0
+22,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,8.559458,# Environment (auto-captured 2026-10-15 13:56:57),0
+23,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,4.278723,# Environment (auto-captured 2026-10-15 13:56:57),0
+24,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,8.296818,# Environment (auto-captured 2026-10-15 13:56:57),0

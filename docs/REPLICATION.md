@@ -22,20 +22,28 @@ Versions measured: see `evidence/data/env.md`.
 | experiment | script | our results |
 |---|---|---|
 | environment and board-PC clock offset | `harness.py env`, `harness.py offset` | `data/env.md` |
-| model switch (40, fruit/flag) and bitstream (24, 6 designs) | `run_D2.py model 40`, `run_D2.py bit 24` | `data/D2-*` |
+| model switch (40, fruit/flag) and bitstream (24, 6 designs), 1 s gaps (phase-locked to the 5 s poll) | `run_D2.py model 40`, `run_D2.py bit 24` | `data/D2-*` |
+| same, random 0-5 s gaps (the series the paper reports) | `run_D2b.py bit 24`, `run_D2b.py model 40` | `data/D2b-*`, `data/D2b-summary.md`, `data/D2b-journal-follow.txt` |
 | stage breakdown (10 per type) | `run_D3.py model 10`, `run_D3.py bit 10`, `analyze_D3.py` | `data/D3-*`, `data/D3-summary.md` |
 | upload rejection matrix | `run_D4.py all 3` | `data/D4-matrix`, `data/D4-summary.md` |
 | flag mismatches, board vs CPU | `analyze_flags.py board|cpu|compare` (images in `data/flag-images`) | `data/D5-flag` |
 | CPU baseline on the board | `cpu_bench/` (cross-compile with the Yocto SDK), `run_D6.py 150` | `data/D6-cpu*`, `data/D6-resources` |
+| CoreDLA latency, same method | `dla_bench/` (cross-compile like `cpu_bench`), `run_D6dla.py 150` | `data/D6-dla-*`, `data/D6-dla-summary.md` |
+| fruit board-vs-CPU labels (50 images) | `analyze_flags.py cpu|board|compare --set fruit` (writes fixed file names; move the output aside) | `data/D5-fruit` |
 | failure repeats (graph cut, release, stalled download) | `run_D8.py cut 5`, `run_D8.py release 10`, `run_D8.py stall 90` | `data/D8-*`, `data/D8-summary.md` |
 | video bandwidth | `run_D10.py 30` | `data/D10-*` |
+| server load (simulated devices) | `run_D12.py` | `data/D12-load`, `data/D12-summary.md` |
+| network probe (ping, throughput) | `net_probe.py <label> <addr>` | `data/D1-net/probe.csv` (address redacted) |
+| station cost | by hand (prices as reported by the author, no receipts) | `data/D9-cost.csv`, `data/D9-summary.md` |
+| graph-cut recovery times | from `run_D8.py cut 5` phase logs | `data/D8-recovery/graphcut_recovery.csv` |
+| crash loop: restarts per day, first-crash and repair journal excerpts | `journalctl -u dla-server` on the board | `data/dla-server-restarts-per-day.txt`, `data/journal-first-crash-2026-10-03.txt`, `data/journal-repair-2026-10-15.txt`, `data/post-repair-journal-check.txt` |
 
 The bitstream paths in `run_D2.py`/`run_D3.py` point at our `.core.rbf` files; use your own designs (hashes of ours: `NOT_INCLUDED.md`). `run_D8.py stall` needs `sudo tc` on the lab PC's interface to the board and removes the throttle on exit. Expect your numbers to differ with network, board and Mender poll interval (5 s here); compare medians and ranges, not single runs. The earlier single-trial figures are in `docs/guides/PAPER_RESULTS_REPLICATION_GUIDE.md`.
 
 ## 4. Sanity checks
-- Board shows up as a device in Mender; `systemctl is-active dla-server` is active and stays active for 10 minutes (we saw a crash loop every ~49 s when a stale model graph was installed; redeploying the model fixed it, cause not isolated).
+- Board shows up as a device in Mender; `systemctl is-active dla-server` is active and stays active for 10 minutes (we saw a crash loop every ~49 s, "inference on FPGA did not complete"; redeploying the model, which also reprograms the fabric, fixed it; cause not isolated, see `evidence/data/journal-*.txt`).
 - `curl localhost:8000/session/model` returns the model name and categories.
-- A model switch via the web UI finishes in about 25-30 s on a direct link (median 27.2 s, n=40; see `evidence/data/D2-model/summary.md`).
+- A model switch via the web UI finishes in about 25-30 s on a direct link (median 27.2 s, n=40; see `evidence/data/D2b-summary.md`).
 
 ## 5. Secrets and local settings (not in the repository)
 - `backend/lab-backend.env`: Mender URL, account, password, device ID. Template: `backend/lab-backend.env.example`.
@@ -48,4 +56,4 @@ The bitstream paths in `run_D2.py`/`run_D3.py` point at our `.core.rbf` files; u
 - The compiled graphs, bitstreams, runtime libraries, architecture file and base SD image are not published (NOT_INCLUDED.md), so steps 1-3 need your licences and several hours of builds.
 - The MMD patch to the vendor runtime is described, not published.
 - Absolute paths of our lab PC remain in some scripts and notes.
-- Raw board logs from the measurement runs are not published (they contain network identifiers); the per-run CSVs are.
+- Raw board logs from the measurement runs are not published (they contain network identifiers); the per-run CSVs and the two journal excerpts around the crash loop are. The own-model upload series (n=10, 3 October), the JTAG baseline and the notebook scores exist only as dated notes (`evidence/data/MEASURE_VI.md`), not as per-run logs.

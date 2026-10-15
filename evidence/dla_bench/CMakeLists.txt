@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(dla_bench CXX)
+find_package(OpenVINO CONFIG REQUIRED)
+add_executable(dla_bench dla_bench.cpp)
+target_compile_features(dla_bench PRIVATE cxx_std_17)
+target_include_directories(dla_bench PRIVATE ${DLA_PLUGIN_INC})
+target_link_libraries(dla_bench PRIVATE openvino::runtime)

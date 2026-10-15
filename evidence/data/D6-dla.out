@@ -1,0 +1,5 @@
+dla-server was active
+load after stop: 2.65 2.88 3.18 1/146 1892206
+D6-dla-resnet18: median 90.8 ms p95 91.0 mean 90.9 sd 0.1 -> 11.01 img/s
+D6-dla-resnet50: median 235.9 ms p95 236.4 mean 235.9 sd 0.3 -> 4.24 img/s
+dla-server restarted: active
