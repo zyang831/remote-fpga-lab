@@ -223,7 +223,7 @@ Boot contract after this (differs from the table above):
   `/var/lib/mender/fpga-reconfig.prev` for `ArtifactRollback`. `NeedsArtifactReboot: No`.
 - `mender/90-coredla.rules`: `/dev/uio*` and `/dev/msgdma_coredla*` become group `terasic`
   0660 (replaces the chgrp in `scripts/03_board_setup.sh`).
-- `mender/mender.conf`: `ServerURL https://mender-host.tail86ce73.ts.net`, 30 s update poll.
+- `mender/mender.conf`: `ServerURL https://mender.example.ts.net`, 30 s update poll.
   Device type `de25-nano`. Tailscale on the board runs in kernel-TUN mode with
   `iptables-legacy` (`update-alternatives`), the shipped userspace-networking mode could not
   resolve or reach the server.

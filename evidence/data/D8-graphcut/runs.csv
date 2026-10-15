@@ -1,0 +1,6 @@
+index,input,sha256,result,seconds,env,warmup
+0,badgraph-1:fruit,,ok,12.874213,live-before=fruit,0
+1,badgraph-1:fruit,,ok,12.886236,live-before=fruit,0
+2,badgraph-1:fruit,,ok,12.344593,live-before=fruit,0
+3,badgraph-1:fruit,,ok,9.631963,live-before=fruit,0
+4,badgraph-1:fruit,,ok,12.877873,live-before=fruit,0

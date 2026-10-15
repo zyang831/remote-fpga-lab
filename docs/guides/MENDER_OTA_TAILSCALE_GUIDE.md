@@ -449,7 +449,7 @@ Either direct or relay is fine functionally; direct is lower-latency. Run `tails
 echo | openssl s_client -connect mender-host.tailXXXX.ts.net:443 -servername mender-host.tailXXXX.ts.net 2>/dev/null \
   | openssl x509 -noout -subject -issuer -dates
 # Issuer should be Let's Encrypt; dates within the 90-day window.
-curl -sSf https://mender-host.tail86ce73.ts.net/ >/dev/null && echo "TLS+HTTP OK"
+curl -sSf https://mender.example.ts.net/ >/dev/null && echo "TLS+HTTP OK"
 ```
 
 If `curl` fails with a cert error, MagicDNS/HTTPS isn't fully propagated or you copied the wrong cert into `compose/certs/`.

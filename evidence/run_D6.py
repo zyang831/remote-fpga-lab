@@ -1,10 +1,11 @@
 """D6 CPU baseline on the board: stops dla-server (sudo) for the run, always restarts it. python3 run_D6.py [runs]"""
-import sys, subprocess, time, statistics as st, harness as h
+import os, sys, subprocess, time, statistics as st, harness as h
 runs = int(sys.argv[1]) if len(sys.argv) > 1 else 150; warm = 20
 BIN = "/home/<user>/fyp/final/paper/notes/cpu_bench/build/cpu_bench"
 MODELS = {"resnet18": "~/bench/r18/model.xml", "resnet50": "~/bench/r50/model.xml"}
 CONF = [("A76", "2,3", 2), ("A76", "2", 1), ("A55", "0,1", 2), ("A55", "0", 1)]
-SUDO = "echo '<BOARD_PASSWORD>' | sudo -S -p '' "
+import shlex
+SUDO = f"echo {shlex.quote(os.environ['BOARD_SUDO'])} | sudo -S -p '' "  # board sudo password from the environment
 def ssh(cmd, t=600): return subprocess.run(["ssh", h.BOARD, cmd], capture_output=True, text=True, timeout=t)
 subprocess.run(["scp", "-q", BIN, f"{h.BOARD}:bench/cpu_bench"], check=True)
 was = ssh("systemctl is-active dla-server").stdout.strip(); print("dla-server was", was)

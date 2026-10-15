@@ -1,0 +1,11 @@
+index,input,sha256,result,seconds,env,warmup
+0,ghrd-then-release,,ok,11.917639,live-before=fruit,0
+1,ghrd-then-release,,ok,13.429935,live-before=fruit,0
+2,ghrd-then-release,,ok,13.396800,live-before=fruit,0
+3,ghrd-then-release,,ok,13.178228,live-before=fruit,0
+4,ghrd-then-release,,ok,16.004833,live-before=fruit,0
+5,ghrd-then-release,,ok,19.808099,live-before=fruit,0
+6,ghrd-then-release,,ok,22.637148,live-before=fruit,0
+7,ghrd-then-release,,ok,12.149245,live-before=fruit,0
+8,ghrd-then-release,,ok,12.303114,live-before=fruit,0
+9,ghrd-then-release,,ok,13.362104,live-before=fruit,0

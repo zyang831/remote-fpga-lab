@@ -1,0 +1,82 @@
+kind,case,rep,http,message,deployment_created,seconds_to_answer,final_state,board_after(model|dla-server fpga)
+bit,empty file,0,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.00,,flag|active operating
+bit,empty file,1,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.00,,flag|active operating
+bit,empty file,2,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.00,,flag|active operating
+bit,random bytes 2 MiB,0,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.01,,flag|active operating
+bit,random bytes 2 MiB,1,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.01,,flag|active operating
+bit,random bytes 2 MiB,2,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.01,,flag|active operating
+bit,"valid header, 64 KiB cut",0,400,"""too small to be a complete Agilex 5 .core.rbf""",0,0.00,,flag|active operating
+bit,"valid header, 64 KiB cut",1,400,"""too small to be a complete Agilex 5 .core.rbf""",0,0.00,,flag|active operating
+bit,"valid header, 64 KiB cut",2,400,"""too small to be a complete Agilex 5 .core.rbf""",0,0.00,,flag|active operating
+bit,valid file cut to 75%,0,200,"{""programming"": true}",1,0.01,fail:failed,flag|active operating
+bit,valid file cut to 75%,1,200,"{""programming"": true}",1,0.01,fail:failed,flag|active operating
+bit,valid file cut to 75%,2,200,"{""programming"": true}",1,0.00,fail:failed,flag|active operating
+bit,"wrong header, right size",0,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.01,,flag|active operating
+bit,"wrong header, right size",1,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.01,,flag|active operating
+bit,"wrong header, right size",2,400,"""not an Agilex 5 .core.rbf (unexpected header)""",0,0.01,,flag|active operating
+bit,valid header + 9 MiB,0,413,"""bitstream exceeds 8388608 bytes""",0,0.01,,flag|active operating
+bit,valid header + 9 MiB,1,413,"""bitstream exceeds 8388608 bytes""",0,0.01,,flag|active operating
+bit,valid header + 9 MiB,2,413,"""bitstream exceeds 8388608 bytes""",0,0.01,,flag|active operating
+bit,wrong extension,0,400,"""filename must end in .rbf""",0,0.00,,flag|active operating
+bit,wrong extension,1,400,"""filename must end in .rbf""",0,0.00,,flag|active operating
+bit,wrong extension,2,400,"""filename must end in .rbf""",0,0.01,,flag|active operating
+model,ResNet-50 (wrong topology),0,400,"""model.xml has 292 layers, the reference ResNet-18 has 120""",0,0.09,,flag|active operating
+model,ResNet-50 (wrong topology),1,400,"""model.xml has 292 layers, the reference ResNet-18 has 120""",0,0.11,,flag|active operating
+model,ResNet-50 (wrong topology),2,400,"""model.xml has 292 layers, the reference ResNet-18 has 120""",0,0.08,,flag|active operating
+model,extra layer,0,400,"""model.xml has 121 layers, the reference ResNet-18 has 120""",0,0.05,,flag|active operating
+model,extra layer,1,400,"""model.xml has 121 layers, the reference ResNet-18 has 120""",0,0.05,,flag|active operating
+model,extra layer,2,400,"""model.xml has 121 layers, the reference ResNet-18 has 120""",0,0.05,,flag|active operating
+model,final layer (SoftMax) missing,0,400,"""model.xml has 119 layers, the reference ResNet-18 has 120""",0,0.05,,flag|active operating
+model,final layer (SoftMax) missing,1,400,"""model.xml has 119 layers, the reference ResNet-18 has 120""",0,0.04,,flag|active operating
+model,final layer (SoftMax) missing,2,400,"""model.xml has 119 layers, the reference ResNet-18 has 120""",0,0.06,,flag|active operating
+model,SoftMax replaced by Sigmoid,0,400,"""layer id=118 (Sigmoid) differs from the reference ResNet-18 (SoftMax); only the final FC size may change, and it must be 15 (lines in categories.txt)""",0,0.05,,flag|active operating
+model,SoftMax replaced by Sigmoid,1,400,"""layer id=118 (Sigmoid) differs from the reference ResNet-18 (SoftMax); only the final FC size may change, and it must be 15 (lines in categories.txt)""",0,0.05,,flag|active operating
+model,SoftMax replaced by Sigmoid,2,400,"""layer id=118 (Sigmoid) differs from the reference ResNet-18 (SoftMax); only the final FC size may change, and it must be 15 (lines in categories.txt)""",0,0.04,,flag|active operating
+model,preprocessing (Divide) missing,0,400,"""model.xml has 119 layers, the reference ResNet-18 has 120""",0,0.04,,flag|active operating
+model,preprocessing (Divide) missing,1,400,"""model.xml has 119 layers, the reference ResNet-18 has 120""",0,0.05,,flag|active operating
+model,preprocessing (Divide) missing,2,400,"""model.xml has 119 layers, the reference ResNet-18 has 120""",0,0.04,,flag|active operating
+model,categories: one extra line,0,400,"""model.xml output is [1,15] but categories.txt has 16 lines""",0,0.04,,flag|active operating
+model,categories: one extra line,1,400,"""model.xml output is [1,15] but categories.txt has 16 lines""",0,0.05,,flag|active operating
+model,categories: one extra line,2,400,"""model.xml output is [1,15] but categories.txt has 16 lines""",0,0.04,,flag|active operating
+model,categories: empty,0,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: empty,1,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.05,,flag|active operating
+model,categories: empty,2,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: one line,0,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: one line,1,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: one line,2,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: blank line inside,0,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: blank line inside,1,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,categories: blank line inside,2,400,"""categories.txt needs one non-empty label per line, at least two lines""",0,0.04,,flag|active operating
+model,name: uppercase/space,0,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: uppercase/space,1,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: uppercase/space,2,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: starts with dash,0,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: starts with dash,1,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: starts with dash,2,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: 33 chars,0,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: 33 chars,1,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: 33 chars,2,400,"""name must be 1-32 chars of a-z, 0-9, - (starting with a letter or digit)""",0,0.04,,flag|active operating
+model,name: built-in 'fruit',0,400,"""fruit is a built-in model; pick another name""",0,0.04,,flag|active operating
+model,name: built-in 'fruit',1,400,"""fruit is a built-in model; pick another name""",0,0.05,,flag|active operating
+model,name: built-in 'fruit',2,400,"""fruit is a built-in model; pick another name""",0,0.05,,flag|active operating
+model,model.xml truncated (half),0,400,"""model.xml is not well-formed XML (unclosed token: line 1268, column 3)""",0,0.05,,flag|active operating
+model,model.xml truncated (half),1,400,"""model.xml is not well-formed XML (unclosed token: line 1268, column 3)""",0,0.04,,flag|active operating
+model,model.xml truncated (half),2,400,"""model.xml is not well-formed XML (unclosed token: line 1268, column 3)""",0,0.05,,flag|active operating
+model,model.bin truncated (half),0,400,"""model.bin is 22358834 bytes; a 15-class ResNet-18 IR should be 44717668""",0,0.03,,flag|active operating
+model,model.bin truncated (half),1,400,"""model.bin is 22358834 bytes; a 15-class ResNet-18 IR should be 44717668""",0,0.04,,flag|active operating
+model,model.bin truncated (half),2,400,"""model.bin is 22358834 bytes; a 15-class ResNet-18 IR should be 44717668""",0,0.03,,flag|active operating
+model,model.xml not OpenVINO (random bytes),0,400,"""model.xml is not well-formed XML (not well-formed (invalid token): line 1, column 0)""",0,0.04,,flag|active operating
+model,model.xml not OpenVINO (random bytes),1,400,"""model.xml is not well-formed XML (not well-formed (invalid token): line 1, column 0)""",0,0.04,,flag|active operating
+model,model.xml not OpenVINO (random bytes),2,400,"""model.xml is not well-formed XML (not well-formed (invalid token): line 1, column 0)""",0,0.04,,flag|active operating
+model,"model.bin not weights (random, right size)",0,200,"{""building"": true, ""classes"": 15}",0,0.07,fail:failed,flag|active operating
+model,"model.bin not weights (random, right size)",1,200,"{""building"": true, ""classes"": 15}",0,0.07,fail:failed,flag|active operating
+model,"model.bin not weights (random, right size)",2,200,"{""building"": true, ""classes"": 15}",0,0.09,fail:failed,flag|active operating
+model,ACCEPT? duplicate categories,0,200,"{""building"": true, ""classes"": 15}",1,0.07,build:ok,rej-51213-0|active operating
+model,ACCEPT? duplicate categories,1,200,"{""building"": true, ""classes"": 15}",1,0.07,build:ok,rej-51266-1|active operating
+model,ACCEPT? duplicate categories,2,200,"{""building"": true, ""classes"": 15}",1,0.06,build:ok,rej-51306-2|active operating
+model,"ACCEPT: valid, random weights",0,200,"{""building"": true, ""classes"": 15}",0,0.07,fail:failed,rej-51306-2|active operating
+model,"ACCEPT: valid, random weights",1,200,"{""building"": true, ""classes"": 15}",0,0.06,fail:failed,rej-51306-2|active operating
+model,"ACCEPT: valid, random weights",2,200,"{""building"": true, ""classes"": 15}",0,0.07,fail:failed,rej-51306-2|active operating
+model,"ACCEPT: valid weights, labels reversed (wrong answers)",0,200,"{""building"": true, ""classes"": 15}",1,0.07,build:ok,rej-52180-0|active operating
+model,"ACCEPT: valid weights, labels reversed (wrong answers)",1,200,"{""building"": true, ""classes"": 15}",1,0.07,build:ok,rej-52220-1|active operating
+model,"ACCEPT: valid weights, labels reversed (wrong answers)",2,200,"{""building"": true, ""classes"": 15}",1,0.08,build:ok,rej-52262-2|active operating

@@ -13,4 +13,4 @@ OpenVINO 2024.6 ARM CPU plugin, FP32 IR, batch 1, sync infer, random input, 20 w
 | resnet50 | A76 | 1 | 150 | 314.0 | 320.2 | 314.8 | 2.7 | 3.18 |
 | resnet50 | A76 | 2 | 150 | 315.1 | 321.4 | 315.6 | 2.0 | 3.17 |
 
-Observation: a second thread gives no speed-up on A76 (ARM plugin ran effectively single-threaded); A55 gains ~13% with 2 threads. Compare with FPGA latency from Table V (CoreDLA, same ResNet-18) when writing V-B.
+Observation: a second thread gives no speed-up on A76 (ARM plugin ran effectively single-threaded); A55 gains ~13% with 2 threads. Compare with FPGA latency from Table V (CoreDLA, same ResNet-18) when writing V-B. Licence note: see availability.md (AI Suite s.4(a)(v)); user clearing with Altera supervisor.
