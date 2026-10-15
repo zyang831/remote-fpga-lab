@@ -1,0 +1,13 @@
+[Unit]
+Description=Panic the board if an FPGA reprogram wedges (fpga-stuck-detector.sh)
+Before=coredla-fpga.service
+
+[Service]
+ExecStart=/usr/local/sbin/fpga-stuck-detector.sh
+# journald can be blocked by the wedge; never let output stall the detector.
+StandardOutput=null
+StandardError=null
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

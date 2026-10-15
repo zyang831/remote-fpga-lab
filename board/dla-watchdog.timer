@@ -1,0 +1,10 @@
+[Unit]
+Description=Check the dla-server live picture every 30 s
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=30s
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

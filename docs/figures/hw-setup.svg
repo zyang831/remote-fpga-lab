@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1560 700" width="1560" height="700" font-family="Inter, 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif">
+  <title>Hardware setup: today, what we tried, and the power-only option</title>
+  <defs>
+    <!-- DE25-Nano, stylised. Ports (local): DC jack left (-12,31), USB right (18+208,32),
+         Ethernet right (228,69), MIPI connector top (55,-4), LEDs bottom right. -->
+    <g id="board">
+      <rect x="0" y="0" width="220" height="140" rx="10" fill="#1d6b57" stroke="#0f4536" stroke-width="2"/>
+      <circle cx="10" cy="10" r="4" fill="#0f4536"/><circle cx="210" cy="10" r="4" fill="#0f4536"/>
+      <circle cx="10" cy="130" r="4" fill="#0f4536"/><circle cx="210" cy="130" r="4" fill="#0f4536"/>
+      <rect x="75" y="30" width="70" height="70" rx="5" fill="#22262b" stroke="#51575e" stroke-width="2"/>
+      <rect x="83" y="38" width="54" height="54" rx="3" fill="none" stroke="#3a3f45"/>
+      <text x="110" y="62" fill="#e8ecef" font-size="11" font-weight="700" text-anchor="middle">AGILEX 5</text>
+      <text x="110" y="78" fill="#9aa3ab" font-size="9" text-anchor="middle">FPGA + ARM</text>
+      <text x="16" y="126" fill="#cfe9df" font-size="12" font-weight="600">DE25-Nano</text>
+      <g fill="#ffd23f"><circle cx="160" cy="120" r="4"/><circle cx="172" cy="120" r="4"/><circle cx="184" cy="120" r="4" fill="#6b5d1f"/><circle cx="196" cy="120" r="4"/></g>
+      <rect x="-14" y="20" width="16" height="22" rx="3" fill="#2d3136"/>
+      <rect x="206" y="25" width="20" height="14" rx="2" fill="#c9ccd1" stroke="#8a9096"/>
+      <rect x="206" y="57" width="22" height="24" rx="2" fill="#c9ccd1" stroke="#8a9096"/>
+      <rect x="206" y="63" width="12" height="12" fill="#8a9096"/>
+      <rect x="30" y="-6" width="50" height="10" rx="2" fill="#f5f0e1" stroke="#b9a77a"/>
+    </g>
+    <g id="mipi">
+      <rect x="-25" y="-25" width="50" height="50" rx="6" fill="#2d3136"/>
+      <circle r="15" fill="#15181b"/><circle r="9" fill="#3b7dd8"/><circle cx="-3" cy="-3" r="3" fill="#cfe3ff"/>
+    </g>
+    <g id="ribbon">
+      <rect x="-10" y="0" width="20" height="76" fill="#f2a541"/>
+      <path d="M-5 0 V76 M0 0 V76 M5 0 V76" stroke="#c77f1c" stroke-width="1"/>
+    </g>
+    <g id="power">
+      <rect x="0" y="0" width="64" height="42" rx="8" fill="#3a3f45"/>
+      <path d="M36 6 L24 23 H33 L28 36 L42 17 H33 Z" fill="#ffd23f"/>
+    </g>
+    <g id="webcam">
+      <rect x="-14" y="22" width="28" height="8" rx="3" fill="#3a3f45"/>
+      <circle r="22" fill="#2d3136"/><circle r="11" fill="#3b7dd8"/><circle cx="-3" cy="-3" r="3.5" fill="#cfe3ff"/>
+    </g>
+    <g id="dongle">
+      <rect x="0" y="0" width="12" height="16" fill="#c9ccd1" stroke="#8a9096"/>
+      <rect x="12" y="-3" width="36" height="22" rx="5" fill="#2d3136"/>
+    </g>
+    <g id="waves" fill="none" stroke-width="4" stroke-linecap="round">
+      <path d="M0 -10 A12 12 0 0 1 0 10"/><path d="M8 -20 A24 24 0 0 1 8 20"/><path d="M16 -30 A36 36 0 0 1 16 30"/>
+    </g>
+  </defs>
+
+  <rect width="1560" height="700" fill="#f6f7f9"/>
+  <text x="780" y="46" font-size="28" font-weight="700" fill="#1b1f24" text-anchor="middle">Hardware setup: one board, fewer cables</text>
+
+  <!-- ============ Panel 1: today ============ -->
+  <g transform="translate(20,80)">
+    <rect width="480" height="540" rx="16" fill="#fff" stroke="#e1e4e8" stroke-width="2"/>
+    <circle cx="36" cy="38" r="16" fill="#2b7bb9"/><text x="36" y="44" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="62" y="45" font-size="22" font-weight="700" fill="#1b1f24">Today in the lab</text>
+    <rect x="352" y="22" width="112" height="32" rx="16" fill="#e4eef7"/><text x="408" y="43" font-size="15" font-weight="700" fill="#2b7bb9" text-anchor="middle">3 cables</text>
+
+    <polygon points="402,152 418,152 330,352 266,352" fill="#3b7dd8" opacity=".12"/>
+    <path d="M80 350 C 100 350, 88 261, 108 261" stroke="#e4572e" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M346 262 C 390 262, 420 220, 410 172" stroke="#7b4bb7" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M348 299 C 390 299, 428 280, 428 318" stroke="#2b7bb9" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <use xlink:href="#ribbon" x="175" y="160"/>
+    <use xlink:href="#board" x="120" y="230"/>
+    <use xlink:href="#mipi" x="175" y="135"/>
+    <use xlink:href="#power" x="16" y="330"/>
+    <use xlink:href="#webcam" x="410" y="140"/>
+    <!-- lab PC tower -->
+    <rect x="404" y="318" width="48" height="84" rx="6" fill="#3a3f45"/><rect x="412" y="330" width="32" height="5" rx="2" fill="#6b7178"/><circle cx="428" cy="388" r="4" fill="#4ade80"/>
+
+    <text x="175" y="80" font-size="15" font-weight="700" fill="#1b1f24" text-anchor="middle">MIPI camera</text>
+    <text x="175" y="82" dy="14" font-size="12" fill="#6b7178" text-anchor="middle">what the AI sees</text>
+    <text x="410" y="80" font-size="15" font-weight="700" fill="#1b1f24" text-anchor="middle">USB webcam</text>
+    <text x="410" y="82" dy="14" font-size="12" fill="#6b7178" text-anchor="middle">shows the LEDs</text>
+    <text x="48" y="396" font-size="14" font-weight="600" fill="#1b1f24" text-anchor="middle">Power</text>
+    <text x="428" y="420" font-size="14" font-weight="600" fill="#1b1f24" text-anchor="middle">Lab PC</text>
+
+    <rect x="16" y="440" width="448" height="84" rx="12" fill="#e4eef7"/>
+    <text x="36" y="470" font-size="16" font-weight="700" fill="#1b1f24">Works today: webcam alone on USB</text>
+    <text x="36" y="494" font-size="14" fill="#3a3f45">Ethernet to the lab PC is the board's network.</text>
+    <text x="36" y="513" font-size="14" fill="#3a3f45">The webcam lets remote users watch the LEDs.</text>
+  </g>
+
+  <!-- ============ Panel 2: tried ============ -->
+  <g transform="translate(540,80)">
+    <rect width="480" height="540" rx="16" fill="#fff" stroke="#e1e4e8" stroke-width="2"/>
+    <circle cx="36" cy="38" r="16" fill="#d64545"/><text x="36" y="44" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="62" y="45" font-size="22" font-weight="700" fill="#1b1f24">Tried: WiFi dongle</text>
+    <rect x="352" y="22" width="112" height="32" rx="16" fill="#fbe5e5"/><text x="408" y="43" font-size="15" font-weight="700" fill="#d64545" text-anchor="middle">✕ removed</text>
+
+    <path d="M80 350 C 100 350, 88 261, 108 261" stroke="#e4572e" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M346 262 L 392 262" stroke="#7b4bb7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M412 250 L 410 172" stroke="#7b4bb7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M412 276 L 412 318" stroke="#7b4bb7" stroke-width="6" stroke-linecap="round"/>
+    <use xlink:href="#ribbon" x="175" y="160"/>
+    <use xlink:href="#board" x="120" y="230"/>
+    <use xlink:href="#mipi" x="175" y="135"/>
+    <use xlink:href="#power" x="16" y="330"/>
+    <use xlink:href="#webcam" x="410" y="140"/>
+    <rect x="390" y="248" width="44" height="30" rx="5" fill="#5b3a8c"/><text x="412" y="268" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">hub</text>
+    <use xlink:href="#dongle" transform="translate(418,318) rotate(90)"/>
+    <use xlink:href="#waves" x="430" y="345" stroke="#b8bec4"/>
+    <!-- fault burst on the shared USB port -->
+    <path d="M362 222 l8 18 18 -6 -8 16 16 10 -18 4 4 18 -16 -10 -10 16 -4 -18 -18 2 12 -14 -14 -12 18 -2 z" fill="#d64545" stroke="#fff" stroke-width="2"/>
+    <text x="367" y="253" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">!</text>
+
+    <text x="175" y="80" font-size="15" font-weight="700" fill="#1b1f24" text-anchor="middle">MIPI camera</text>
+    <text x="410" y="80" font-size="15" font-weight="700" fill="#1b1f24" text-anchor="middle">USB webcam</text>
+    <text x="410" y="420" font-size="14" font-weight="600" fill="#1b1f24" text-anchor="middle">WiFi dongle</text>
+    <text x="48" y="396" font-size="14" font-weight="600" fill="#1b1f24" text-anchor="middle">Power</text>
+
+    <rect x="16" y="440" width="448" height="84" rx="12" fill="#fbe5e5"/>
+    <text x="36" y="470" font-size="16" font-weight="700" fill="#1b1f24">Dongle + webcam share one USB port</text>
+    <text x="36" y="494" font-size="14" fill="#3a3f45">USB locks up → WiFi lost → only a power cycle helps.</text>
+    <text x="36" y="513" font-size="14" fill="#3a3f45">A kernel fix helped the video, not the lock-up.</text>
+  </g>
+
+  <!-- ============ Panel 3: power only ============ -->
+  <g transform="translate(1060,80)">
+    <rect width="480" height="540" rx="16" fill="#fff" stroke="#e1e4e8" stroke-width="2"/>
+    <circle cx="36" cy="38" r="16" fill="#2f9e5b"/><text x="36" y="44" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <text x="62" y="45" font-size="22" font-weight="700" fill="#1b1f24">Power-only option</text>
+    <rect x="352" y="22" width="112" height="32" rx="16" fill="#e2f4e8"/><text x="408" y="43" font-size="15" font-weight="700" fill="#2f9e5b" text-anchor="middle">1 cable</text>
+
+    <path d="M80 350 C 100 350, 88 261, 108 261" stroke="#e4572e" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <use xlink:href="#ribbon" x="175" y="160"/>
+    <use xlink:href="#board" x="120" y="230"/>
+    <use xlink:href="#mipi" x="175" y="135"/>
+    <use xlink:href="#power" x="16" y="330"/>
+    <use xlink:href="#dongle" x="346" y="254"/>
+    <use xlink:href="#waves" x="404" y="262" stroke="#2f9e5b"/>
+    <!-- no webcam: ghost outline -->
+    <circle cx="410" cy="150" r="22" fill="none" stroke="#b8bec4" stroke-width="2" stroke-dasharray="5 5"/>
+    <path d="M394 134 L426 166" stroke="#b8bec4" stroke-width="2"/>
+
+    <text x="175" y="80" font-size="15" font-weight="700" fill="#1b1f24" text-anchor="middle">MIPI camera</text>
+    <text x="410" y="112" font-size="14" fill="#8a9096" text-anchor="middle">no webcam</text>
+    <text x="425" y="316" font-size="14" font-weight="600" fill="#1b1f24" text-anchor="middle">WiFi dongle</text>
+    <text x="48" y="396" font-size="14" font-weight="600" fill="#1b1f24" text-anchor="middle">Power</text>
+
+    <rect x="16" y="440" width="448" height="84" rx="12" fill="#e2f4e8"/>
+    <text x="36" y="470" font-size="16" font-weight="700" fill="#1b1f24">The only cable is power</text>
+    <text x="36" y="494" font-size="14" fill="#3a3f45">No webcam, no lock-up seen. Fits the AI demo.</text>
+    <text x="36" y="513" font-size="13" fill="#6b7178">Trade-off: LEDs not visible remotely · soak test pending</text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(430,662)" font-size="14" fill="#3a3f45">
+    <path d="M0 0 H36" stroke="#e4572e" stroke-width="6" stroke-linecap="round"/><text x="46" y="5">Power</text>
+    <path d="M130 0 H166" stroke="#2b7bb9" stroke-width="7" stroke-linecap="round"/><text x="176" y="5">Ethernet</text>
+    <path d="M280 0 H316" stroke="#7b4bb7" stroke-width="6" stroke-linecap="round"/><text x="326" y="5">USB</text>
+    <rect x="400" y="-8" width="36" height="16" fill="#f2a541"/><text x="446" y="5">MIPI ribbon</text>
+    <use xlink:href="#waves" x="570" y="0" stroke="#2f9e5b" transform="translate(570,0) scale(.5) translate(-570,0)"/><text x="608" y="5">WiFi</text>
+  </g>
+</svg>

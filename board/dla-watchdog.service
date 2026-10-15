@@ -1,0 +1,6 @@
+[Unit]
+Description=Restart dla-server if its live camera picture stalls (dla-watchdog.sh)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/dla-watchdog.sh

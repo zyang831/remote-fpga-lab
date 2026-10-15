@@ -1,0 +1,57 @@
+#!/bin/sh
+# Mender update module "coredla-runtime": the on-board inference stack.
+# Payload: runtime.tar (dla-server + dla-server.sh + plugins.xml + OpenVINO /
+# OpenCV / CoreDLA plugin libs + sdklibs/), unpacked over /opt/dla. Previous
+# tree kept at /opt/dla.prev for ArtifactRollback. Restarts dla-server if a
+# model is staged; the module fails (-> rollback) if it does not come up.
+set -e
+
+STATE="$1"
+FILES="$2/files"
+DLA=/opt/dla
+PREV=/opt/dla.prev
+
+wait_ready() {
+    # coredla-fpga-up.sh starts dla-server only when the DLA design is live.
+    systemctl is-active -q dla-server.service || return 0
+    i=0
+    while [ ! -f /var/lib/dla/spool/ready ] && [ $i -lt 180 ]; do
+        systemctl is-active -q dla-server.service || { echo "dla-server died" >&2; return 1; }
+        sleep 1; i=$((i + 1))
+    done
+    [ -f /var/lib/dla/spool/ready ] || { echo "dla-server not ready after ${i}s" >&2; return 1; }
+}
+
+restart_server() {
+    systemctl stop dla-server.service 2>/dev/null || true
+    rm -f /var/lib/dla/spool/ready
+    if ls /dev/msgdma_coredla* >/dev/null 2>&1 && [ -f /var/lib/dla/model/graph.bin ]; then
+        systemctl start dla-server.service
+    fi
+    wait_ready
+}
+
+case "$STATE" in
+    NeedsArtifactReboot) echo No ;;
+    SupportsRollback)    echo Yes ;;
+    ArtifactInstall)
+        [ -f "$FILES/runtime.tar" ] || { echo "payload has no runtime.tar" >&2; exit 1; }
+        systemctl stop dla-server.service 2>/dev/null || true
+        rm -rf "$PREV"
+        [ -d "$DLA" ] && mv "$DLA" "$PREV"
+        mkdir -p "$DLA"
+        tar -xf "$FILES/runtime.tar" -C "$DLA"
+        install -m644 "$DLA/dla-server.service" /etc/systemd/system/dla-server.service
+        systemctl daemon-reload
+        restart_server
+        ;;
+    ArtifactRollback)
+        [ -d "$PREV" ] || { echo "no previous runtime to roll back to" >&2; exit 1; }
+        systemctl stop dla-server.service 2>/dev/null || true
+        rm -rf "$DLA"; mv "$PREV" "$DLA"
+        install -m644 "$DLA/dla-server.service" /etc/systemd/system/dla-server.service
+        systemctl daemon-reload
+        restart_server
+        ;;
+esac
+exit 0

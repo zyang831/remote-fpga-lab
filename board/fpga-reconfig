@@ -1,0 +1,36 @@
+#!/bin/sh
+# Mender update module "fpga-reconfig": live FPGA reprogram, no reboot.
+# Payload: output_design.core.rbf (required) + my_overlay.dtb (optional; the
+# fpga-region overlay describing that design). Both land in /lib/firmware,
+# then coredla-fpga-up.sh reprograms and rebinds. A payload with only a
+# `restore` file puts the idle design back instead. ArtifactRollback always
+# goes to the idle design (/var/lib/dla/idle, kept by coredla-model), never
+# to whatever the previous deployment left.
+set -e
+
+STATE="$1"
+FILES="$2/files"
+FW=/lib/firmware
+RBF=output_design.core.rbf
+DTB=my_overlay.dtb
+IDLE=/var/lib/dla/idle
+
+restore_idle() {
+    [ -f "$IDLE/$RBF" ] || { echo "no idle design in $IDLE" >&2; exit 1; }
+    cp "$IDLE"/* "$FW/"
+    /usr/local/sbin/coredla-fpga-up.sh
+}
+
+case "$STATE" in
+    NeedsArtifactReboot) echo No ;;
+    SupportsRollback)    echo Yes ;;
+    ArtifactInstall)
+        if [ -f "$FILES/restore" ]; then restore_idle; exit 0; fi
+        [ -f "$FILES/$RBF" ] || { echo "payload has no $RBF" >&2; exit 1; }
+        cp "$FILES/$RBF" "$FW/$RBF"
+        [ -f "$FILES/$DTB" ] && cp "$FILES/$DTB" "$FW/$DTB"
+        /usr/local/sbin/coredla-fpga-up.sh
+        ;;
+    ArtifactRollback) restore_idle ;;
+esac
+exit 0

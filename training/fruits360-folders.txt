@@ -1,0 +1,66 @@
+# Fruits-360 folders get_fruit.py uses: our 15 fruits + non-target produce (-> none). Lookalikes are left out.
+/*/Apple*/
+/*/Banana*/
+/*/Cherry*/
+/*/Grape*/
+!/*/Grapefruit*/
+/*/Kiwi*/
+/*/Lemon*/
+/*/Limes*/
+/*/Mango*/
+!/*/Mangostan*/
+/*/Orange*/
+/*/orange*/
+!/*/Orange peeled*/
+/*/Peach*/
+/*/Pineapple*/
+/*/Pomegranate*/
+/*/Raspberry*/
+/*/Strawberry*/
+!/*/Strawberry Wedge*/
+/*/Watermelon*/
+/*/Avocado*/
+/*/Pear*/
+/*/Tomato [0-9]*/
+/*/Tomato Heart*/
+/*/Tomato Maroon*/
+/*/Tomato Yellow*/
+/*/Carrot*/
+/*/Cauliflower*/
+/*/Cabbage*/
+/*/Celery*/
+/*/Corn*/
+/*/Cucumber*/
+/*/Eggplant*/
+/*/Onion*/
+/*/Potato*/
+/*/Zucchini*/
+/*/Mushroom*/
+/*/Nut*/
+/*/Walnut*/
+/*/Hazelnut*/
+/*/Chestnut*/
+/*/Pistachio*/
+/*/Almonds*/
+/*/Pepper*/
+/*/Beetroot*/
+/*/Kohlrabi*/
+/*/Ginger*/
+/*/garlic*/
+/*/Cocos*/
+/*/Dates*/
+/*/Fig*/
+/*/Carambola*/
+/*/Cherimoya*/
+/*/Salak*/
+/*/Bean pod*/
+/*/Pitahaya*/
+/*/Cantaloupe*/
+/*/Lychee*/
+/*/Rambutan*/
+/*/Granadilla*/
+/*/Maracuja*/
+/*/Passion Fruit*/
+/*/Cactus fruit*/
+/*/Peanut*/
+/*/Caju*/

@@ -1,0 +1,2 @@
+KERNEL=="uio[0-9]*", GROUP="terasic", MODE="0660"
+KERNEL=="msgdma_coredla[0-9]*", GROUP="terasic", MODE="0660"

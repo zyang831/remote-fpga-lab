@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+uploads/*
+!uploads/.gitkeep
+assets/*
+!assets/.gitkeep
+static/fruit-v1.pt
+uvicorn.log
+lab-backend.env

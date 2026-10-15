@@ -1,0 +1,14 @@
+[Unit]
+Description=CoreDLA inference server (watches /var/lib/dla/spool/inbox)
+# Started/stopped by coredla-fpga-up.sh around every reconfig, never at boot on
+# its own: it must not touch the fabric before the DLA design is programmed.
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sh -c 'rm -f /var/lib/dla/spool/ready /var/lib/dla/spool/results/live.*; mkdir -p /var/lib/dla/spool/inbox /var/lib/dla/spool/done /var/lib/dla/spool/results; chown -R terasic /var/lib/dla/spool'
+ExecStart=/opt/dla/dla-server.sh /var/lib/dla/model /var/lib/dla/spool
+Restart=on-failure
+RestartSec=10
+# Import is ~70 s and ~475 MB peak on a 683 MB board: never two at once.
+KillMode=control-group
+TimeoutStopSec=15

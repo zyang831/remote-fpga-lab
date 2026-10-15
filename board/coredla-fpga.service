@@ -1,0 +1,15 @@
+[Unit]
+Description=Program FPGA from /lib/firmware and load CoreDLA fabric drivers
+After=sysinit.target systemd-modules-load.service
+Before=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# Boot always programs the idle (last good model) design, never a student
+# .rbf left in /lib/firmware by fpga-reconfig. No idle dir yet = old behaviour.
+ExecStartPre=-/bin/sh -c 'cp /var/lib/dla/idle/* /lib/firmware/'
+ExecStart=/usr/local/sbin/coredla-fpga-up.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,58 @@
+#!/bin/sh
+# Mender update module "coredla-model": one classifier = bitstream + overlay +
+# compiled graph + labels. Payload: output_design.core.rbf, my_overlay.dtb,
+# graph.bin, categories.txt, one *.arch, name (model name, one line).
+# Firmware pair goes to /lib/firmware, the rest to /var/lib/dla/model, then
+# coredla-fpga-up.sh reprograms and restarts dla-server; install fails unless
+# dla-server reports ready. Previous set kept for ArtifactRollback.
+set -e
+
+STATE="$1"
+FILES="$2/files"
+FW=/lib/firmware
+RBF=output_design.core.rbf
+DTB=my_overlay.dtb
+MODEL=/var/lib/dla/model
+PREV=/var/lib/mender/coredla-model.prev
+IDLE=/var/lib/dla/idle
+
+wait_ready() {
+    i=0
+    while [ ! -f /var/lib/dla/spool/ready ] && [ $i -lt 180 ]; do
+        systemctl is-active -q dla-server.service || { echo "dla-server died" >&2; return 1; }
+        sleep 1; i=$((i + 1))
+    done
+    [ -f /var/lib/dla/spool/ready ] || { echo "dla-server not ready after ${i}s" >&2; return 1; }
+}
+
+case "$STATE" in
+    NeedsArtifactReboot) echo No ;;
+    SupportsRollback)    echo Yes ;;
+    ArtifactInstall)
+        for f in $RBF $DTB graph.bin categories.txt name; do
+            [ -f "$FILES/$f" ] || { echo "payload has no $f" >&2; exit 1; }
+        done
+        ls "$FILES"/*.arch >/dev/null 2>&1 || { echo "payload has no .arch" >&2; exit 1; }
+        systemctl stop dla-server.service 2>/dev/null || true
+        rm -rf "$PREV"; mkdir -p "$PREV"
+        for f in $RBF $DTB; do [ -f "$FW/$f" ] && cp "$FW/$f" "$PREV/"; done
+        [ -d "$MODEL" ] && mv "$MODEL" "$PREV/model"
+        mkdir -p "$MODEL"
+        cp "$FILES/$RBF" "$FW/$RBF"
+        cp "$FILES/$DTB" "$FW/$DTB"
+        cp "$FILES"/graph.bin "$FILES"/categories.txt "$FILES"/name "$FILES"/*.arch "$MODEL/"
+        /usr/local/sbin/coredla-fpga-up.sh
+        systemctl is-active -q dla-server.service || { echo "dla-server did not start (no DLA design?)" >&2; exit 1; }
+        wait_ready
+        # Known-good design: what boot and fpga-reconfig rollback program.
+        mkdir -p "$IDLE"; cp "$FW/$RBF" "$FW/$DTB" "$IDLE/"
+        ;;
+    ArtifactRollback)
+        [ -f "$PREV/$RBF" ] || { echo "no previous set to roll back to" >&2; exit 1; }
+        systemctl stop dla-server.service 2>/dev/null || true
+        cp "$PREV/$RBF" "$FW/"; [ -f "$PREV/$DTB" ] && cp "$PREV/$DTB" "$FW/"
+        rm -rf "$MODEL"; [ -d "$PREV/model" ] && mv "$PREV/model" "$MODEL"
+        /usr/local/sbin/coredla-fpga-up.sh
+        ;;
+esac
+exit 0
