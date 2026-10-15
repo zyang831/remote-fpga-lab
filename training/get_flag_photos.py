@@ -17,7 +17,7 @@ from make_flags import COUNTRIES
 
 HERE = Path(__file__).parent
 OUT = HERE / "data" / "flag-real"
-UA = {"User-Agent": "edge-ai-demo/0.1 (Monash FYP; tzyang0831@gmail.com)"}
+UA = {"User-Agent": "edge-ai-demo/0.1 (FYP; contact: <your email>)"}
 OK_LICENSE = re.compile(r"^(CC0|CC BY( |-SA )\d|Public domain)", re.I)
 PER_COUNTRY = 25
 # Extra title phrases for countries where "flag of X" alone finds too few photos.

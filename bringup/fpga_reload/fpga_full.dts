@@ -1,0 +1,6 @@
+/dts-v1/;
+/plugin/;
+
+&{/fpga-region} {
+	firmware-name = "golden_top.core.rbf";
+};

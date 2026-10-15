@@ -1,0 +1,60 @@
+diff --git a/drivers/aic8800/aic8800_fdrv/aicwf_txrxif.c b/drivers/aic8800/aic8800_fdrv/aicwf_txrxif.c
+index 679ee83..513bd64 100644
+--- a/drivers/aic8800/aic8800_fdrv/aicwf_txrxif.c
++++ b/drivers/aic8800/aic8800_fdrv/aicwf_txrxif.c
+@@ -333,6 +333,13 @@ static bool aicwf_another_ptk_1(struct rx_buff *buffer)
+         return false;
+     }
+ 
++    /* URB wrote only buffer->len bytes; the rest of the 20K buffer is stale
++     * data from a previous packet. Stop at the end of real data, not at the
++     * end of the allocation, or the walker parses garbage lengths. */
++    if(buffer->len && read >= buffer->start + buffer->len) {
++        return false;
++    }
++
+     aggr_len = (*read | (*(read + 1) << 8));
+     if(aggr_len == 0) {
+         return false;
+@@ -581,10 +588,15 @@ int aicwf_process_rxframes(struct aicwf_rx_priv *rx_priv)
+                 //printk("%s cnt:%d pkt_len:%d \r\n", __func__, cnt, pkt_len);
+ #ifndef CONFIG_USB_RX_REASSEMBLE
+                 if (pkt_len > 1600) {
+-                    AICWFDBG(LOGERROR, "%s pkt_len > 1600 \r\n", __func__);
+-                    aicwf_prealloc_rxbuff_free(buffer, &rx_priv->rxbuff_lock);
+-                    atomic_dec(&rx_priv->rx_cnt);
+-                    return -EBADE;
++                    AICWFDBG(LOGERROR, "%s pkt_len %u > 1600 at off %d of len %u (subframe %d), drop rest of buffer\r\n",
++                             __func__, pkt_len, (int)(data - buffer->start), buffer->len, cnt);
++                    /* Parse desync on this aggregated buffer: stop walking its
++                     * subframes but let the end-of-loop free (below) return the
++                     * rxbuff to the pool and keep draining the rest of rxq.
++                     * Original code returned -EBADE here, abandoning the rest of
++                     * the queue while rx_complete kept allocating new URB buffers,
++                     * exhausting the 1000-buffer prealloc pool (~72s) -> RX dead. */
++                    break;
+                 }
+ #endif
+                
+diff --git a/drivers/aic8800/aic8800_fdrv/rwnx_radar.c b/drivers/aic8800/aic8800_fdrv/rwnx_radar.c
+index 9bd58d0..b9af4ca 100644
+--- a/drivers/aic8800/aic8800_fdrv/rwnx_radar.c
++++ b/drivers/aic8800/aic8800_fdrv/rwnx_radar.c
+@@ -1400,7 +1400,7 @@ static void rwnx_radar_cac_work(struct work_struct *ws)
+                        &ctxt->chan_def,
+                     #endif
+                        NL80211_RADAR_CAC_FINISHED, GFP_KERNEL
+-                    #if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 15, 0)
++                    #if 1 /* backported to 6.12 board kernel */
+                        , 0
+                     #endif
+                        );
+@@ -1504,7 +1504,7 @@ void rwnx_radar_cancel_cac(struct rwnx_radar *radar)
+                            &ctxt->chan_def,
+                         #endif
+                            NL80211_RADAR_CAC_ABORTED, GFP_KERNEL
+-                        #if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 15, 0)
++                        #if 1 /* backported to 6.12 board kernel */
+                            , 0
+                         #endif
+                            );

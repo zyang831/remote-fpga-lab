@@ -11,14 +11,14 @@ Wants=network-online.target
 
 [Service]
 User=fyp-student
-WorkingDirectory=/home/fyp-student/mender/lab-backend
-EnvironmentFile=/home/fyp-student/mender/lab-backend/lab-backend.env
-Environment=PATH=/home/fyp-student/.local/bin:/usr/local/bin:/usr/bin:/bin
+WorkingDirectory=/home/<user>/mender/lab-backend
+EnvironmentFile=/home/<user>/mender/lab-backend/lab-backend.env
+Environment=PATH=/home/<user>/.local/bin:/usr/local/bin:/usr/bin:/bin
 # Open browser tabs hold SSE streams; without the timeout a stop waits on them forever.
-ExecStart=/home/fyp-student/mender/lab-backend/.venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000 --timeout-graceful-shutdown 3
+ExecStart=/home/<user>/mender/lab-backend/.venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000 --timeout-graceful-shutdown 3
 Restart=on-failure
 RestartSec=3
-StandardOutput=append:/home/fyp-student/mender/lab-backend/uvicorn.log
+StandardOutput=append:/home/<user>/mender/lab-backend/uvicorn.log
 StandardError=inherit
 
 [Install]

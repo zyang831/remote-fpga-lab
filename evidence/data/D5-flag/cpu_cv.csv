@@ -1,0 +1,111 @@
+filename,true,top1,top5
+argentina_00.jpg,argentina,thailand,thailand:0.151323|switzerland:0.115559|none:0.105917|united states:0.105234|greece:0.0800668
+argentina_01.jpg,argentina,argentina,argentina:0.902305|switzerland:0.00866534|portugal:0.00771153|philippines:0.00440522|none:0.00438226
+argentina_02.jpg,argentina,argentina,argentina:0.956204|thailand:0.00242848|spain:0.00219771|philippines:0.00214715|united states:0.00204319
+australia_00.jpg,australia,united kingdom,united kingdom:0.280203|australia:0.273404|thailand:0.123945|none:0.0669269|switzerland:0.0368675
+australia_01.jpg,australia,australia,australia:0.845384|united kingdom:0.0606851|none:0.0203745|philippines:0.00719274|thailand:0.0059005
+australia_02.jpg,australia,none,none:0.416938|united kingdom:0.24792|australia:0.0639834|thailand:0.0468656|philippines:0.0237935
+brazil_00.jpg,brazil,brazil,brazil:0.808083|south africa:0.0296905|italy:0.0178046|india:0.0164223|thailand:0.0113123
+brazil_01.jpg,brazil,none,none:0.367711|united kingdom:0.148875|switzerland:0.0596507|india:0.0515686|thailand:0.0319946
+brazil_02.jpg,brazil,india,india:0.601527|brazil:0.260773|south africa:0.031365|italy:0.0261967|portugal:0.0122009
+canada_00.jpg,canada,canada,canada:0.930239|greece:0.00505255|argentina:0.00497909|portugal:0.0044673|japan:0.00339364
+canada_01.jpg,canada,canada,canada:0.941028|portugal:0.00372417|greece:0.00317732|argentina:0.00302096|spain:0.0028718
+canada_02.jpg,canada,canada,canada:0.969265|portugal:0.00314923|japan:0.00287655|singapore:0.00140721|sweden:0.00128185
+china_00.jpg,china,china,china:0.959449|philippines:0.0037731|russia:0.00346024|france:0.00278949|italy:0.00270198
+china_01.jpg,china,philippines,philippines:0.246814|indonesia:0.178804|china:0.146859|italy:0.0590986|portugal:0.0424052
+china_02.jpg,china,none,none:0.365356|portugal:0.125401|thailand:0.109061|philippines:0.0363639|japan:0.0288482
+france_00.jpg,france,none,none:0.342513|japan:0.157766|portugal:0.0734708|italy:0.0493116|thailand:0.0448301
+france_01.jpg,france,greece,greece:0.244528|south korea:0.172812|united kingdom:0.0911827|portugal:0.0637147|none:0.0597446
+france_02.jpg,france,none,none:0.676029|philippines:0.200992|argentina:0.0167768|malaysia:0.0119457|mexico:0.0109291
+germany_00.jpg,germany,germany,germany:0.869104|philippines:0.0105405|none:0.0103228|thailand:0.00793165|spain:0.00658076
+germany_01.jpg,germany,germany,germany:0.404232|russia:0.104408|philippines:0.0528892|spain:0.0424401|sweden:0.0404476
+germany_02.jpg,germany,germany,germany:0.708561|russia:0.0484514|none:0.0363048|sweden:0.0217569|italy:0.0146525
+greece_00.jpg,greece,greece,greece:0.980097|canada:0.00137389|china:0.00119689|thailand:0.00118947|united kingdom:0.00113772
+greece_01.jpg,greece,australia,australia:0.214856|greece:0.15014|united states:0.112055|united kingdom:0.110523|none:0.0775219
+greece_02.jpg,greece,greece,greece:0.565923|united kingdom:0.0589416|japan:0.0505875|none:0.0433261|argentina:0.0313716
+india_00.jpg,india,india,india:0.673676|none:0.089447|thailand:0.0197903|south africa:0.0159807|mexico:0.0153342
+india_01.jpg,india,none,none:0.257208|india:0.235449|portugal:0.0587875|indonesia:0.0428684|russia:0.0372906
+india_02.jpg,india,india,india:0.812401|none:0.073581|thailand:0.0086078|saudi arabia:0.00699694|indonesia:0.00652593
+indonesia_00.jpg,indonesia,indonesia,indonesia:0.728973|thailand:0.0388992|spain:0.0380263|portugal:0.0175003|none:0.0157503
+indonesia_01.jpg,indonesia,none,none:0.190189|united kingdom:0.153904|japan:0.0898311|malaysia:0.0742427|greece:0.0678766
+indonesia_02.jpg,indonesia,thailand,thailand:0.272276|philippines:0.254347|indonesia:0.214975|switzerland:0.0496024|china:0.0399513
+italy_00.jpg,italy,italy,italy:0.672466|mexico:0.221242|portugal:0.0104784|south africa:0.00949279|sweden:0.00778214
+italy_01.jpg,italy,italy,italy:0.8908|mexico:0.0644947|united kingdom:0.00261805|japan:0.00253775|france:0.00245357
+italy_02.jpg,italy,italy,italy:0.799559|mexico:0.157648|portugal:0.0068671|saudi arabia:0.00484536|japan:0.00422783
+japan_00.jpg,japan,japan,japan:0.987638|philippines:0.00153238|france:0.00115582|italy:0.000888995|thailand:0.000745809
+japan_01.jpg,japan,japan,japan:0.720088|indonesia:0.131649|thailand:0.0262227|none:0.0138273|singapore:0.0127384
+japan_02.jpg,japan,japan,japan:0.941248|philippines:0.00420642|thailand:0.00346163|united kingdom:0.00312199|none:0.00272264
+malaysia_00.jpg,malaysia,malaysia,malaysia:0.87291|thailand:0.00858756|argentina:0.00757422|indonesia:0.00630386|turkey:0.0061373
+malaysia_01.jpg,malaysia,malaysia,malaysia:0.878497|italy:0.00986021|new zealand:0.00898839|france:0.0084003|south korea:0.00789715
+malaysia_02.jpg,malaysia,malaysia,malaysia:0.941758|south korea:0.00480298|indonesia:0.00301459|south africa:0.00291041|none:0.00277225
+mexico_00.jpg,mexico,mexico,mexico:0.946666|portugal:0.00403966|none:0.00390557|japan:0.0034923|malaysia:0.00272202
+mexico_01.jpg,mexico,mexico,mexico:0.949464|philippines:0.00328971|united kingdom:0.00326286|japan:0.00306704|canada:0.00290688
+mexico_02.jpg,mexico,mexico,mexico:0.924931|portugal:0.0141424|none:0.00384214|singapore:0.0037463|japan:0.00363434
+new zealand_00.jpg,new zealand,new zealand,new zealand:0.682057|australia:0.0954207|none:0.0382764|united kingdom:0.0363459|japan:0.0267828
+new zealand_01.jpg,new zealand,new zealand,new zealand:0.895268|thailand:0.00599485|japan:0.00584659|indonesia:0.00562973|italy:0.00562307
+new zealand_02.jpg,new zealand,new zealand,new zealand:0.897187|none:0.0108821|canada:0.00894107|thailand:0.00741165|united kingdom:0.00738462
+none_00.jpg,none,none,none:0.985667|indonesia:0.00162477|japan:0.00153613|russia:0.00128679|malaysia:0.000930015
+none_01.jpg,none,none,none:0.992576|indonesia:0.000992558|russia:0.000821755|japan:0.000709569|malaysia:0.000376567
+none_02.jpg,none,none,none:0.96958|russia:0.0042041|turkey:0.00209892|japan:0.0017282|vietnam:0.00166714
+none_03.jpg,none,none,none:0.93428|india:0.0135784|japan:0.00753196|united kingdom:0.00700601|malaysia:0.00411763
+none_04.jpg,none,none,none:0.99217|malaysia:0.000892659|russia:0.000652936|united kingdom:0.000430616|turkey:0.000374313
+none_05.jpg,none,none,none:0.761182|russia:0.0373788|japan:0.0178424|south africa:0.0129726|turkey:0.0101187
+none_06.jpg,none,none,none:0.990701|russia:0.00141581|malaysia:0.00103107|indonesia:0.000594273|united states:0.000548536
+none_07.jpg,none,none,none:0.96181|indonesia:0.00567666|russia:0.00431353|malaysia:0.00209906|thailand:0.00196326
+none_08.jpg,none,none,none:0.94632|indonesia:0.0042236|russia:0.00415083|saudi arabia:0.00357649|malaysia:0.00347963
+none_09.jpg,none,none,none:0.912074|indonesia:0.0114236|malaysia:0.00595433|south korea:0.00590613|russia:0.0054993
+none_10.jpg,none,none,none:0.954955|germany:0.00520324|argentina:0.00247964|south korea:0.00225653|south africa:0.00225269
+none_11.jpg,none,none,none:0.868266|turkey:0.0128263|brazil:0.0122751|south korea:0.0111224|malaysia:0.00986896
+none_12.jpg,none,none,none:0.636494|vietnam:0.0308789|indonesia:0.0300139|japan:0.0267005|canada:0.0244841
+none_13.jpg,none,japan,japan:0.570825|none:0.242184|turkey:0.0119288|spain:0.0119044|new zealand:0.00999695
+none_14.jpg,none,none,none:0.780987|sweden:0.0814902|south africa:0.0235103|brazil:0.00917585|new zealand:0.00883531
+none_15.jpg,none,none,none:0.459645|south africa:0.356445|sweden:0.0389967|brazil:0.0208994|mexico:0.00824522
+none_16.jpg,none,none,none:0.799579|france:0.0639686|sweden:0.0129795|new zealand:0.00804325|greece:0.00762935
+none_17.jpg,none,none,none:0.97058|saudi arabia:0.00432702|south africa:0.00282909|brazil:0.00238983|mexico:0.00206249
+none_18.jpg,none,none,none:0.953834|argentina:0.0055698|india:0.00464854|greece:0.00392694|russia:0.00287037
+none_19.jpg,none,russia,russia:0.60687|none:0.211947|italy:0.0167193|philippines:0.0141308|turkey:0.00882141
+philippines_00.jpg,philippines,none,none:0.230465|malaysia:0.112165|united states:0.102345|united kingdom:0.101437|thailand:0.0709555
+philippines_01.jpg,philippines,philippines,philippines:0.771908|indonesia:0.014507|mexico:0.0142026|none:0.0131271|malaysia:0.0125206
+philippines_02.jpg,philippines,philippines,philippines:0.493732|united kingdom:0.159472|malaysia:0.0464756|thailand:0.0377034|china:0.0325851
+portugal_00.jpg,portugal,portugal,portugal:0.725718|mexico:0.0289664|south korea:0.0236544|australia:0.0147621|china:0.0141016
+portugal_01.jpg,portugal,portugal,portugal:0.923734|malaysia:0.00508328|united kingdom:0.00387832|philippines:0.0036214|mexico:0.00356718
+portugal_02.jpg,portugal,portugal,portugal:0.915133|malaysia:0.00561554|philippines:0.00554721|mexico:0.00441843|thailand:0.00427612
+russia_00.jpg,russia,none,none:0.55554|russia:0.191055|united states:0.0448953|thailand:0.0230844|south korea:0.0224505
+russia_01.jpg,russia,russia,russia:0.709834|philippines:0.0706786|united kingdom:0.0308121|none:0.0302945|new zealand:0.0129948
+russia_02.jpg,russia,united kingdom,united kingdom:0.364503|united states:0.153027|philippines:0.123831|malaysia:0.0756743|new zealand:0.0460821
+saudi arabia_00.jpg,saudi arabia,saudi arabia,saudi arabia:0.815065|none:0.0206604|argentina:0.0105695|switzerland:0.0100442|south africa:0.00926067
+saudi arabia_01.jpg,saudi arabia,none,none:0.224397|india:0.148487|portugal:0.083779|italy:0.0673931|indonesia:0.0581193
+saudi arabia_02.jpg,saudi arabia,saudi arabia,saudi arabia:0.911012|russia:0.00611512|vietnam:0.00514809|switzerland:0.00464884|south africa:0.00452888
+singapore_00.jpg,singapore,singapore,singapore:0.963141|indonesia:0.00259107|philippines:0.00249299|south africa:0.00198826|russia:0.00191987
+singapore_01.jpg,singapore,turkey,turkey:0.269747|china:0.105265|singapore:0.0979298|none:0.0814171|russia:0.0309818
+singapore_02.jpg,singapore,turkey,turkey:0.32628|singapore:0.281323|canada:0.0432987|none:0.0384359|china:0.0346468
+south africa_00.jpg,south africa,india,india:0.422946|none:0.105279|thailand:0.066789|indonesia:0.0597585|new zealand:0.0572555
+south africa_01.jpg,south africa,south africa,south africa:0.919148|france:0.00480562|argentina:0.00428595|sweden:0.00413127|switzerland:0.00412312
+south africa_02.jpg,south africa,south africa,south africa:0.937039|sweden:0.00391457|mexico:0.00327268|switzerland:0.00292532|united states:0.0028103
+south korea_00.jpg,south korea,south korea,south korea:0.93808|china:0.00483601|japan:0.00353941|thailand:0.00309096|vietnam:0.00293211
+south korea_01.jpg,south korea,united kingdom,united kingdom:0.152959|greece:0.129616|south korea:0.109723|australia:0.0820557|new zealand:0.0689016
+south korea_02.jpg,south korea,south korea,south korea:0.827032|none:0.0782152|japan:0.0165456|turkey:0.00658407|thailand:0.00627753
+spain_00.jpg,spain,spain,spain:0.888028|none:0.0309299|china:0.00825753|thailand:0.00789957|philippines:0.00553721
+spain_01.jpg,spain,spain,spain:0.911625|none:0.00814951|thailand:0.00585379|china:0.00462996|turkey:0.00394909
+spain_02.jpg,spain,spain,spain:0.735098|thailand:0.0334864|portugal:0.0247305|china:0.0209769|south africa:0.0203278
+sweden_00.jpg,sweden,sweden,sweden:0.936631|none:0.0052438|india:0.00486649|thailand:0.00402533|argentina:0.00352722
+sweden_01.jpg,sweden,sweden,sweden:0.687368|none:0.0653288|japan:0.043352|italy:0.0135168|china:0.0133916
+sweden_02.jpg,sweden,none,none:0.290129|sweden:0.114057|japan:0.111863|united kingdom:0.0736406|argentina:0.0351774
+switzerland_00.jpg,switzerland,none,none:0.413115|switzerland:0.264606|turkey:0.0475343|vietnam:0.0205144|indonesia:0.0190191
+switzerland_01.jpg,switzerland,switzerland,switzerland:0.956699|thailand:0.00407394|portugal:0.00251732|spain:0.0024896|argentina:0.00236943
+switzerland_02.jpg,switzerland,none,none:0.556818|new zealand:0.0692743|indonesia:0.0433056|japan:0.0274999|philippines:0.0268504
+thailand_00.jpg,thailand,thailand,thailand:0.974189|none:0.00250938|russia:0.00236133|japan:0.00123445|argentina:0.00114558
+thailand_01.jpg,thailand,thailand,thailand:0.981911|philippines:0.00177296|united kingdom:0.00131132|new zealand:0.000896952|indonesia:0.000864234
+thailand_02.jpg,thailand,united states,united states:0.384927|malaysia:0.183939|thailand:0.160531|philippines:0.0892191|united kingdom:0.0811781
+turkey_00.jpg,turkey,china,china:0.325229|switzerland:0.183212|vietnam:0.110522|portugal:0.0571521|turkey:0.0510663
+turkey_01.jpg,turkey,india,india:0.222146|malaysia:0.185182|turkey:0.164584|united states:0.13379|united kingdom:0.0389182
+turkey_02.jpg,turkey,china,china:0.304298|switzerland:0.108302|united states:0.0963493|turkey:0.0632546|vietnam:0.0521872
+united kingdom_00.jpg,united kingdom,united kingdom,united kingdom:0.597867|none:0.0887393|thailand:0.0425685|germany:0.0304846|new zealand:0.0225831
+united kingdom_01.jpg,united kingdom,united kingdom,united kingdom:0.379532|united states:0.142634|thailand:0.110846|turkey:0.0598925|malaysia:0.0401303
+united kingdom_02.jpg,united kingdom,none,none:0.930559|japan:0.0156815|united kingdom:0.0125947|malaysia:0.00757351|philippines:0.00422143
+united states_00.jpg,united states,united states,united states:0.799327|philippines:0.0171748|sweden:0.00978027|south africa:0.00964139|china:0.00876308
+united states_01.jpg,united states,united states,united states:0.902434|japan:0.0142942|none:0.0141506|thailand:0.00568616|italy:0.00526921
+united states_02.jpg,united states,united states,united states:0.944621|united kingdom:0.00751189|italy:0.00501359|singapore:0.00423825|new zealand:0.00334565
+vietnam_00.jpg,vietnam,vietnam,vietnam:0.932717|sweden:0.00366221|south korea:0.00361284|china:0.00335997|italy:0.0030462
+vietnam_01.jpg,vietnam,vietnam,vietnam:0.911884|portugal:0.00598205|italy:0.0059591|russia:0.00587842|china:0.00498495
+vietnam_02.jpg,vietnam,vietnam,vietnam:0.93499|sweden:0.00377901|china:0.00320559|italy:0.00319993|united states:0.00293614

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(cpu_bench CXX)
+find_package(OpenVINO CONFIG REQUIRED)
+add_executable(cpu_bench cpu_bench.cpp)
+target_compile_features(cpu_bench PRIVATE cxx_std_17)
+target_link_libraries(cpu_bench PRIVATE openvino::runtime)

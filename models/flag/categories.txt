@@ -1,0 +1,31 @@
+argentina
+australia
+brazil
+canada
+china
+france
+germany
+greece
+india
+indonesia
+italy
+japan
+malaysia
+mexico
+new zealand
+none
+philippines
+portugal
+russia
+saudi arabia
+singapore
+south africa
+south korea
+spain
+sweden
+switzerland
+thailand
+turkey
+united kingdom
+united states
+vietnam

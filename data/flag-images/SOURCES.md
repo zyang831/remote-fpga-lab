@@ -1,0 +1,92 @@
+# Sources (Wikimedia Commons)
+
+- `australia_00.jpg` — File:Flag of Australia at the Museum of Flight in Seattle (2024) - 0602.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Australia_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0602.jpg
+- `australia_01.jpg` — File:Flag of Australia at the Museum of Flight in Seattle (2024) - 0601.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Australia_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0601.jpg
+- `australia_02.jpg` — File:Flag of Australia at the Museum of Flight in Seattle (2024) - 0603.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Australia_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0603.jpg
+- `brazil_00.jpg` — File:Flag of Brazil, Mato Grosso do Sul and Paranaiba.jpg — Public domain — Ludo Games — https://commons.wikimedia.org/wiki/File:Flag_of_Brazil,_Mato_Grosso_do_Sul_and_Paranaiba.jpg
+- `brazil_01.jpg` — File:Flag of Brazil, Mato Grosso do Sul and Paranaiba (June 2025).jpg — CC BY-SA 4.0 — Ludo Games — https://commons.wikimedia.org/wiki/File:Flag_of_Brazil,_Mato_Grosso_do_Sul_and_Paranaiba_(June_2025).jpg
+- `brazil_02.jpg` — File:Flag of Brazil, MS, and Paranaiba (February 2026).jpg — CC BY-SA 4.0 — Ludo Games-T — https://commons.wikimedia.org/wiki/File:Flag_of_Brazil,_MS,_and_Paranaiba_(February_2026).jpg
+- `canada_00.jpg` — File:Flag of Canada at the Nathan Phillips Square, Toronto, 22 March 2025 02.jpg — CC0 — Rinbro — https://commons.wikimedia.org/wiki/File:Flag_of_Canada_at_the_Nathan_Phillips_Square,_Toronto,_22_March_2025_02.jpg
+- `canada_01.jpg` — File:Flag-of-canada-flying.jpg — CC BY-SA 3.0 — No machine-readable author provided. Makaristos assumed (based on copyright claims). — https://commons.wikimedia.org/wiki/File:Flag-of-canada-flying.jpg
+- `canada_02.jpg` — File:Flag of Canada at the Nathan Phillips Square, Toronto, 22 March 2025 01.jpg — CC0 — Rinbro — https://commons.wikimedia.org/wiki/File:Flag_of_Canada_at_the_Nathan_Phillips_Square,_Toronto,_22_March_2025_01.jpg
+- `china_00.jpg` — File:Flag of China at the Museum of Flight in Seattle (2024) - 0543.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_China_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0543.jpg
+- `china_01.jpg` — File:Flag of China at the Museum of Flight in Seattle (2024) - 0542.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_China_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0542.jpg
+- `china_02.jpg` — File:Flag of the National Immigration Administration of PR China.jpg — Public domain — National Immigration Administration (Q10892869) — https://commons.wikimedia.org/wiki/File:Flag_of_the_National_Immigration_Administration_of_PR_China.jpg
+- `germany_00.jpg` — File:Flag of Germany at the Museum of Flight in Seattle (2024) - 0586.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Germany_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0586.jpg
+- `germany_01.jpg` — File:Flag of Germany and Colombia.jpg — CC BY-SA 4.0 — RossiLeone — https://commons.wikimedia.org/wiki/File:Flag_of_Germany_and_Colombia.jpg
+- `germany_02.jpg` — File:Flag of Germany and Colombia (vertical).jpg — CC BY-SA 4.0 — RossiLeone — https://commons.wikimedia.org/wiki/File:Flag_of_Germany_and_Colombia_(vertical).jpg
+- `france_00.jpg` — File:Flag of France at the Museum of Flight in Seattle (2024) - 0587.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_France_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0587.jpg
+- `france_01.jpg` — File:Flag of France flying at the State Capitol building in Hartford (23025718931).jpg — CC BY 2.0 — Dannel Malloy — https://commons.wikimedia.org/wiki/File:Flag_of_France_flying_at_the_State_Capitol_building_in_Hartford_(23025718931).jpg
+- `france_02.jpg` — File:Flag of France American alliance.jpg — CC BY-SA 4.0 — Sus2021 — https://commons.wikimedia.org/wiki/File:Flag_of_France_American_alliance.jpg
+- `united kingdom_00.jpg` — File:Flag of United Kingdom (Armes Forces Day).jpg — CC BY-SA 4.0 — Lamii98 — https://commons.wikimedia.org/wiki/File:Flag_of_United_Kingdom_(Armes_Forces_Day).jpg
+- `united kingdom_01.jpg` — File:Flag of United Kingdom half mast following the death of Elizabeth II.jpg — CC BY-SA 4.0 — Maurice Flesier — https://commons.wikimedia.org/wiki/File:Flag_of_United_Kingdom_half_mast_following_the_death_of_Elizabeth_II.jpg
+- `united kingdom_02.jpg` — File:Natural flag of United Kingdom (2112650677).jpg — CC BY 2.0 — Anderson Mancini from Sao Paulo, Brazil — https://commons.wikimedia.org/wiki/File:Natural_flag_of_United_Kingdom_(2112650677).jpg
+- `indonesia_00.jpg` — File:Flag of Indonesia.jpg — CC BY-SA 3.0 — MashinaZavod_ — https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.jpg
+- `indonesia_01.jpg` — File:Lombok, Blue sky, Boat ride, Flag of Indonesia.jpg — CC BY 4.0 — Vyacheslav Argenberg — https://commons.wikimedia.org/wiki/File:Lombok,_Blue_sky,_Boat_ride,_Flag_of_Indonesia.jpg
+- `indonesia_02.jpg` — File:Flag of Indonesia on the front.jpg — CC BY-SA 4.0 — Baqotun0023 — https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia_on_the_front.jpg
+- `india_00.jpg` — File:Flag of India Kodaikanal Tamil Nadu 20060126.jpg — CC BY 2.0 — Faraz from New York City, USA — https://commons.wikimedia.org/wiki/File:Flag_of_India_Kodaikanal_Tamil_Nadu_20060126.jpg
+- `india_01.jpg` — File:Flag of India, New Delhi.jpg — CC BY-SA 4.0 — Yann Forget — https://commons.wikimedia.org/wiki/File:Flag_of_India,_New_Delhi.jpg
+- `india_02.jpg` — File:Flag of India at the Museum of Flight in Seattle (2024) - 0582.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_India_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0582.jpg
+- `italy_00.jpg` — File:Flag of Italy at the Museum of Flight in Seattle (2024) - 0579.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Italy_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0579.jpg
+- `italy_01.jpg` — File:Flag of Italy at the Museum of Flight in Seattle (2024) - 0554.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Italy_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0554.jpg
+- `italy_02.jpg` — File:Flag of Italy at the Museum of Flight in Seattle (2024) - 0561.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Italy_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0561.jpg
+- `japan_00.jpg` — File:Flag of Japan at the Museum of Flight in Seattle (2024) - 0568.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Japan_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0568.jpg
+- `japan_01.jpg` — File:Flag of Japan at the Museum of Flight in Seattle (2024) - 0567.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Japan_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0567.jpg
+- `japan_02.jpg` — File:Flag of Japan at the Museum of Flight in Seattle (2024) - 0580.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Japan_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0580.jpg
+- `south korea_00.jpg` — File:Flag of South Korea (cropped).jpg — CC BY-SA 3.0 — J. Patrick Fischer — https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea_(cropped).jpg
+- `south korea_01.jpg` — File:Joint Security Area view from NK, Flag of South Korea.jpg — CC BY-SA 4.0 — David Clayton Ellsworth — https://commons.wikimedia.org/wiki/File:Joint_Security_Area_view_from_NK,_Flag_of_South_Korea.jpg
+- `south korea_02.jpg` — File:Flag of South Korea at the Museum of Flight in Seattle (2024) - 0537.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0537.jpg
+- `malaysia_00.jpg` — File:Flag of Malaysia on pole.jpg — CC BY-SA 4.0 — Pete unseth — https://commons.wikimedia.org/wiki/File:Flag_of_Malaysia_on_pole.jpg
+- `malaysia_01.jpg` — File:Flag of Malaysia.jpg — CC BY 2.0 — Dylan Walters — https://commons.wikimedia.org/wiki/File:Flag_of_Malaysia.jpg
+- `malaysia_02.jpg` — File:Malaysian flag flying in Malacca.jpg — CC BY 2.0 — Brian Jeffery Beggerly from S'pore (Singapore), Singapore — https://commons.wikimedia.org/wiki/File:Malaysian_flag_flying_in_Malacca.jpg
+- `mexico_00.jpg` — File:Flag of Mexico at the Museum of Flight in Seattle (2024) - 0559.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Mexico_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0559.jpg
+- `mexico_01.jpg` — File:Flag of Mexico at the Museum of Flight in Seattle (2024) - 0555.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Mexico_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0555.jpg
+- `mexico_02.jpg` — File:Flag of Mexico at the Museum of Flight in Seattle (2024) - 0551.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Mexico_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0551.jpg
+- `new zealand_00.jpg` — File:Flag of New Zealand at the Museum of Flight in Seattle (2024) - 0544.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0544.jpg
+- `new zealand_01.jpg` — File:Flag of New Zealand at the Museum of Flight in Seattle (2024) - 0545.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0545.jpg
+- `new zealand_02.jpg` — File:National flag of New Zealand RMG D0447.jpg — Public domain — Lyttelton District High School — https://commons.wikimedia.org/wiki/File:National_flag_of_New_Zealand_RMG_D0447.jpg
+- `philippines_00.jpg` — File:Flag of Philippines beauty.jpg — CC0 — Hynsly Jade Delos Santos Tormis — https://commons.wikimedia.org/wiki/File:Flag_of_Philippines_beauty.jpg
+- `philippines_01.jpg` — File:Flag of Philippines.jpg — Public domain — Public Domain Images — https://commons.wikimedia.org/wiki/File:Flag_of_Philippines.jpg
+- `philippines_02.jpg` — File:Philippine Flag at Manila City Hall 03.jpg — CC BY-SA 4.0 — Roel Balingit — https://commons.wikimedia.org/wiki/File:Philippine_Flag_at_Manila_City_Hall_03.jpg
+- `singapore_00.jpg` — File:Flag of Singapore.jpg — CC BY 2.0 — ISAF photo by U.S. Navy Petty Officer 1st Class Terry Matlock (ISAF Headquarters Public Affairs Office from Kabul, Afghanistan). — https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.jpg
+- `singapore_01.jpg` — File:Flag of Singapore, Wikimania 2024.jpg — CC0 — NikosLikomitros — https://commons.wikimedia.org/wiki/File:Flag_of_Singapore,_Wikimania_2024.jpg
+- `singapore_02.jpg` — File:Singapore-flag-1.jpg — CC BY-SA 4.0 — Sean Crowley TYJ — https://commons.wikimedia.org/wiki/File:Singapore-flag-1.jpg
+- `thailand_00.jpg` — File:Waving flag of Thailand (1).jpg — CC BY-SA 3.0 — Xiengyod — https://commons.wikimedia.org/wiki/File:Waving_flag_of_Thailand_(1).jpg
+- `thailand_01.jpg` — File:Waving flag of Thailand.jpg — CC BY-SA 3.0 — Xiengyod — https://commons.wikimedia.org/wiki/File:Waving_flag_of_Thailand.jpg
+- `thailand_02.jpg` — File:Flag of Thailand - Ban Chiang National Museum - photo.JPG — Public domain — User:Mattes — https://commons.wikimedia.org/wiki/File:Flag_of_Thailand_-_Ban_Chiang_National_Museum_-_photo.JPG
+- `turkey_00.jpg` — File:Flag of Turkey, Urfa Castle.jpg — CC BY-SA 3.0 — Bernard Gagnon — https://commons.wikimedia.org/wiki/File:Flag_of_Turkey,_Urfa_Castle.jpg
+- `turkey_01.jpg` — File:Flag of Turkey - panoramio.jpg — CC BY 3.0 — ---=XEON=--- — https://commons.wikimedia.org/wiki/File:Flag_of_Turkey_-_panoramio.jpg
+- `turkey_02.jpg` — File:Flag of Turkey.jpg — CC BY 4.0 — Joseolgon — https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.jpg
+- `united states_00.jpg` — File:Drones display flag of United States celebration 4th July in McKinney, TX.jpg — CC0 — Ranch9613 — https://commons.wikimedia.org/wiki/File:Drones_display_flag_of_United_States_celebration_4th_July_in_McKinney,_TX.jpg
+- `united states_01.jpg` — File:American Flag Waving on a Flag Pole.jpg — CC BY-SA 4.0 — Noah Wulf — https://commons.wikimedia.org/wiki/File:American_Flag_Waving_on_a_Flag_Pole.jpg
+- `united states_02.jpg` — File:American Flag on Home Flagpole at Sunrise.jpg — CC BY-SA 4.0 — Noah Wulf — https://commons.wikimedia.org/wiki/File:American_Flag_on_Home_Flagpole_at_Sunrise.jpg
+- `vietnam_00.jpg` — File:Misaglined flag of Vietnam variant 1.jpg — CC0 — MrMoneyknob — https://commons.wikimedia.org/wiki/File:Misaglined_flag_of_Vietnam_variant_1.jpg
+- `vietnam_01.jpg` — File:Flag of Vietnam.jpg — CC BY-SA 2.0 — Hector Garcia from Barcelona, Catalonia, Spain — https://commons.wikimedia.org/wiki/File:Flag_of_Vietnam.jpg
+- `vietnam_02.jpg` — File:Misaglined flag of Vietnam variant 2.jpg — CC0 — MrMoneyknob — https://commons.wikimedia.org/wiki/File:Misaglined_flag_of_Vietnam_variant_2.jpg
+- `south africa_00.jpg` — File:Old flag of South Africa.jpg — CC BY-SA 2.0 — Aubrey Kilian from Cape Town, South Africa — https://commons.wikimedia.org/wiki/File:Old_flag_of_South_Africa.jpg
+- `south africa_01.jpg` — File:Flag of South Africa.jpg — CC BY 2.0 — Chris Eason from London — https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa.jpg
+- `south africa_02.jpg` — File:Flag of South Africa (1).jpg — Public domain — Unknown authorUnknown author — https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa_(1).jpg
+- `argentina_00.jpg` — File:Flag of Argentina in the air.jpg — CC BY 2.0 — pedist — https://commons.wikimedia.org/wiki/File:Flag_of_Argentina_in_the_air.jpg
+- `argentina_01.jpg` — File:Flag of Argentina.jpg — CC BY-SA 3.0 — Cyril R — https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.jpg
+- `argentina_02.jpg` — File:Hand Flag of Argentina.JPG — CC BY-SA 4.0 — Porto Neto — https://commons.wikimedia.org/wiki/File:Hand_Flag_of_Argentina.JPG
+- `spain_00.jpg` — File:Flag of Spain at the Museum of Flight in Seattle (2024) - 0535.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Spain_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0535.jpg
+- `spain_01.jpg` — File:Flag of Spain at the Museum of Flight in Seattle (2024) - 0536.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Spain_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0536.jpg
+- `spain_02.jpg` — File:Flag of Spain.jpg — CC BY-SA 3.0 — Przemek P — https://commons.wikimedia.org/wiki/File:Flag_of_Spain.jpg
+- `saudi arabia_00.jpg` — File:Flag of Saudi Arabia.jpg — CC BY 4.0 — Meshari Alawfi — https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.jpg
+- `saudi arabia_01.jpg` — File:Gulf War Saudi Flag.JPEG — Public domain — CW02 Bailey — https://commons.wikimedia.org/wiki/File:Gulf_War_Saudi_Flag.JPEG
+- `saudi arabia_02.jpg` — File:Shia Saudi flag.jpg — CC0 — Unknown authorUnknown author — https://commons.wikimedia.org/wiki/File:Shia_Saudi_flag.jpg
+- `russia_00.jpg` — File:The Flag of Russia and the Ministry of Defence flag arrive to open the flying display at the Russian Air Force 100th Anniversary Airshow.jpg — CC BY-SA 2.0 — Alan Wilson — https://commons.wikimedia.org/wiki/File:The_Flag_of_Russia_and_the_Ministry_of_Defence_flag_arrive_to_open_the_flying_display_at_the_Russian_Air_Force_100th_Anniversary_Airshow.jpg
+- `russia_01.jpg` — File:Krasnoyarsk Pillars, Russian flag, Flag of Russia.jpg — CC BY 4.0 — Vyacheslav Argenberg — https://commons.wikimedia.org/wiki/File:Krasnoyarsk_Pillars,_Russian_flag,_Flag_of_Russia.jpg
+- `russia_02.jpg` — File:Krasnoyarsk Pillars, Stolby, Russian flag, Flag of Russia.jpg — CC BY 4.0 — Vyacheslav Argenberg — https://commons.wikimedia.org/wiki/File:Krasnoyarsk_Pillars,_Stolby,_Russian_flag,_Flag_of_Russia.jpg
+- `sweden_00.jpg` — File:Flag of Sweden flying.jpg — CC BY-SA 3.0 — Esquilo — https://commons.wikimedia.org/wiki/File:Flag_of_Sweden_flying.jpg
+- `sweden_01.jpg` — File:Flag of Sweden at the Museum of Flight in Seattle (2024) - 0534.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Sweden_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0534.jpg
+- `sweden_02.jpg` — File:Flag of Sweden at the Museum of Flight in Seattle (2024) - 0533.jpg — CC0 — Roc0ast3r — https://commons.wikimedia.org/wiki/File:Flag_of_Sweden_at_the_Museum_of_Flight_in_Seattle_(2024)_-_0533.jpg
+- `switzerland_00.jpg` — File:National Flag of Switzerland, Amsterdam 2026.jpg — CC BY 4.0 — Boaventuravinicius — https://commons.wikimedia.org/wiki/File:National_Flag_of_Switzerland,_Amsterdam_2026.jpg
+- `switzerland_01.jpg` — File:Flag of Switzerland 1.jpg — CC BY-SA 3.0 — Wladyslaw — https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland_1.jpg
+- `switzerland_02.jpg` — File:Flag of Switzerland on the National Day.jpg — CC BY-SA 4.0 — Armineaghayan — https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland_on_the_National_Day.jpg
+- `greece_00.jpg` — File:Flag of Greece waving in Venlo 2026.jpg — CC0 — Kaap bij Sneeuw — https://commons.wikimedia.org/wiki/File:Flag_of_Greece_waving_in_Venlo_2026.jpg
+- `greece_01.jpg` — File:Flag-of-Greece-Venlo-October-2024.jpg — CC BY 4.0 — Acediscovery — https://commons.wikimedia.org/wiki/File:Flag-of-Greece-Venlo-October-2024.jpg
+- `greece_02.jpg` — File:National flag of Greece in abandoned village.jpg — CC0 — Gepsimos — https://commons.wikimedia.org/wiki/File:National_flag_of_Greece_in_abandoned_village.jpg
+- `portugal_00.jpg` — File:Flag of Portugal and Luxembourg.jpg — CC0 — Gabriel from92 — https://commons.wikimedia.org/wiki/File:Flag_of_Portugal_and_Luxembourg.jpg
+- `portugal_01.jpg` — File:Flag of Portugal (1).jpg — Public domain — Photon — https://commons.wikimedia.org/wiki/File:Flag_of_Portugal_(1).jpg
+- `portugal_02.jpg` — File:Flag of Portugal.jpg — CC BY-SA 2.0 — Bleuchoi from Bristol, UK — https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.jpg

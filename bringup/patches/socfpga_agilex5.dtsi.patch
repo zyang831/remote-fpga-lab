@@ -1,0 +1,69 @@
+diff --git a/arch/arm64/boot/dts/intel/socfpga_agilex5.dtsi b/arch/arm64/boot/dts/intel/socfpga_agilex5.dtsi
+index 27d2286e6..a85047b06 100644
+--- a/arch/arm64/boot/dts/intel/socfpga_agilex5.dtsi
++++ b/arch/arm64/boot/dts/intel/socfpga_agilex5.dtsi
+@@ -1251,5 +1251,64 @@ qspi: spi@108d2000 {
+ 			clocks = <&qspi_clk>;
+ 			status = "disabled";
+ 		};
++
++		/*
++		 * CoreDLA on the Terasic DE25-Nano. Addresses are the lightweight
++		 * HPS2FPGA bridge base (0x20000000) plus the offsets assigned in
++		 * qsys_top.qsys: the peripheral bridge holds 0x0-0x1ffff, the DLA CSR
++		 * block 0x20000-0x207ff, and the mSGDMA sits above it at 0x21000.
++		 *
++		 * Interrupts are GIC SPI 17 + the irqNumber on subsys_hps.f2h_irq0_in.
++		 * Lines 0 and 1 are the peripheral PIOs, 2 is dla.irq_level (SPI 19),
++		 * and 3 is the mSGDMA, hence SPI 20.
++		 *
++		 * The base was measured, not assumed: with the mSGDMA interrupt latched
++		 * high, GICD_ISPENDR at 0x1d000200 showed INTID 52 pending, i.e. SPI 20
++		 * for irqNumber 3. Altera's own dtsi agrees -- its two msgdmas on f2h
++		 * lines 0 and 1 are documented as SPI 17 and 18.
++		 */
++		coredla_msgdma: msgdma@20021000 {
++			status = "okay";
++			compatible = "altr,socfpga-msgdma";
++			reg = <0x20021000 0x00000020>,
++				  <0x20021020 0x00000020>;
++			reg-names = "csr", "desc";
++			interrupt-parent = <&intc>;
++			interrupts = <0 20 4>;
++			#dma-cells = <1>;
++		};
++
++		/*
++		 * The DDR window the DLA owns. msgdma_userio adds mem_start to every
++		 * file offset, and the DLA reaches the same memory because
++		 * address_span_extender_axi_256 is built with WINDOW_BASE = 0xb0000000.
++		 * These two must be changed together, and both must match
++		 * dla_mmd_get_ddr_size_per_instance() in the MMD.
++		 *
++		 * The board has 1 GB of LPDDR4 at 0x80000000-0xbfffffff and boots with
++		 * mem=768M, so the kernel stops at 0xafffffff and this 256 MB is free.
++		 */
++		msgdma_coredla0 {
++			status = "okay";
++			compatible = "intel,msgdma-userio-1.0";
++			#address-cells = <2>;
++			mem_start = <0x00000000 0xB0000000>;
++			mem_end   = <0x00000000 0xBFFFFFFF>;
++			reg-names = "emif";
++			dmas = <&coredla_msgdma 0>;
++			dma-names = "rx-tx";
++		};
++
++		/*
++		 * No interrupts property: build_runtime.sh forces
++		 * OPT_RUNTIME_POLLING=true for --hps_platform, so the MMD polls the CSR
++		 * and never arms the UIO interrupt. dla.irq_level is wired to f2h_irq0
++		 * line 2 (SPI 18) if that ever changes.
++		 */
++		coredla0@20020000 {
++			status = "okay";
++			compatible = "generic-uio";
++			reg = <0x20020000 0x00000800>;
++		};
+ 	};
+ };

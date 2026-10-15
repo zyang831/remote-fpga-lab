@@ -1,0 +1,12 @@
+index,input,sha256,result,seconds,env,warmup
+0,flag,,ok,25.433,offset=+0.008s,1
+1,fruit,,ok,27.162,offset=+0.008s,0
+2,flag,,ok,30.791,offset=+0.008s,0
+3,fruit,,ok,26.849,offset=+0.008s,0
+4,flag,,ok,23.033,offset=+0.008s,0
+5,fruit,,ok,27.193,offset=+0.008s,0
+6,flag,,ok,25.076,offset=+0.008s,0
+7,fruit,,ok,23.070,offset=+0.008s,0
+8,flag,,ok,23.026,offset=+0.008s,0
+9,fruit,,ok,25.304,offset=+0.008s,0
+10,flag,,ok,25.257,offset=+0.008s,0
