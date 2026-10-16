@@ -1,0 +1,20 @@
+index,input,sha256,result,seconds,env,warmup
+0,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,7.046579,# Environment (auto-captured 2026-10-15 13:56:57),1
+1,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,8.553781,# Environment (auto-captured 2026-10-15 13:56:57),0
+2,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,7.041025,# Environment (auto-captured 2026-10-15 13:56:57),0
+3,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,7.310669,# Environment (auto-captured 2026-10-15 13:56:57),0
+4,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,8.797535,# Environment (auto-captured 2026-10-15 13:56:57),0
+5,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,6.789822,# Environment (auto-captured 2026-10-15 13:56:57),0
+6,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,7.042369,# Environment (auto-captured 2026-10-15 13:56:57),0
+7,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,6.788949,# Environment (auto-captured 2026-10-15 13:56:57),0
+8,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,6.285410,# Environment (auto-captured 2026-10-15 13:56:57),0
+9,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,10.822843,# Environment (auto-captured 2026-10-15 13:56:57),0
+10,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,9.050310,# Environment (auto-captured 2026-10-15 13:56:57),0
+11,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,7.053124,# Environment (auto-captured 2026-10-15 13:56:57),0
+12,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,7.042934,# Environment (auto-captured 2026-10-15 13:56:57),0
+13,led-johnson.core.rbf,fe5d6d9e698238c27f7643c4bcaa6798a2612f64c5349160032070d421e52e65,ok,6.285793,# Environment (auto-captured 2026-10-15 13:56:57),0
+14,ghrd.core.rbf,0415d069a907a36ce70c21b33f111004e9fe627aa35d2c77fb0bc8f76d1447d0,ok,9.299856,# Environment (auto-captured 2026-10-15 13:56:57),0
+15,edge-ai-dla.core.rbf,f1e4ab4d29fd4a41ccad5dcaceeedd149cebed397127b5be3cb8341c9fa46cde,ok,9.052909,# Environment (auto-captured 2026-10-15 13:56:57),0
+16,CoreDLA_NoSoftmax,929cf663a8dc1b9b31001f4cae8d3f0f733d015cba0edf19803d24ee2aa9ed16,ok,4.529460,# Environment (auto-captured 2026-10-15 13:56:57),0
+17,CoreDLA_Softmax,97384bc0baff8ce90326cab1184f49b99bf4002b871829d90a2be29f30fdf282,ok,9.068241,# Environment (auto-captured 2026-10-15 13:56:57),0
+18,led-bouncing.core.rbf,96e2d06e2890fffb2e649649cadc7d5560552225283959cde0dc5066a97bca4f,ok,6.543939,# Environment (auto-captured 2026-10-15 13:56:57),0

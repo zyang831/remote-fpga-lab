@@ -33,6 +33,8 @@ Versions measured: see `evidence/data/env.md`.
 | failure repeats (graph cut, release, stalled download) | `run_D8.py cut 5`, `run_D8.py release 10`, `run_D8.py stall 90` | `data/D8-*`, `data/D8-summary.md` |
 | video bandwidth | `run_D10.py 30` | `data/D10-*` |
 | server load (simulated devices) | `run_D12.py` | `data/D12-load`, `data/D12-summary.md` |
+| Wi-Fi series (webcam unplugged, eduroam), random 0-5 s gaps | `SERIES=D14-wifi run_D2b.py model 20`, `bit 18`; `net_probe.py` | `data/D14-wifi-*`, `data/D14-summary.md` |
+| own-model upload to live (n=10) | `run_D15.py 10` | `data/D15-ownmodel`, `data/D15-summary.md` (`D15-aborted`: duplicate launch, 2 rows, excluded) |
 | network probe (ping, throughput) | `net_probe.py <label> <addr>` | `data/D1-net/probe.csv` (address redacted) |
 | station cost | by hand (prices as reported by the author, no receipts) | `data/D9-cost.csv`, `data/D9-summary.md` |
 | graph-cut recovery times | from `run_D8.py cut 5` phase logs | `data/D8-recovery/graphcut_recovery.csv` |

@@ -1,0 +1,8 @@
+== before 2026-10-16T04:58:03Z
+*       eduroam  116   195 Mbit/s  92      ▂▄▆█ 
+<WIFI-IF>  UP             <WIFI-IP>/21 fe80::8780:d4:c811:e94e/64 
+pong from coredla (<TAILNET-IP>) via <WIFI-IP>:41641 in 6ms
+== after 2026-10-16T05:21:27Z
+*       eduroam  116   195 Mbit/s  100    
+<WIFI-IF>  UP             <WIFI-IP>/21 fe80::8780:d4:c811:e94e/64 
+pong from coredla (<TAILNET-IP>) via <WIFI-IP>:41641 in 7ms

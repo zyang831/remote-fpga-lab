@@ -1,0 +1,12 @@
+index,input,sha256,result,seconds,env,warmup
+0,d15-28924,,ok,41.746241,# Environment (auto-captured 2026-10-15 13:56:57),1
+1,d15-28966,,ok,31.602653,# Environment (auto-captured 2026-10-15 13:56:57),0
+2,d15-29002,,ok,37.741263,# Environment (auto-captured 2026-10-15 13:56:57),0
+3,d15-29043,,ok,39.864988,# Environment (auto-captured 2026-10-15 13:56:57),0
+4,d15-29084,,ok,32.253007,# Environment (auto-captured 2026-10-15 13:56:57),0
+5,d15-29119,,ok,40.077048,# Environment (auto-captured 2026-10-15 13:56:57),0
+6,d15-29162,,ok,44.660580,# Environment (auto-captured 2026-10-15 13:56:57),0
+7,d15-29209,,ok,29.288674,# Environment (auto-captured 2026-10-15 13:56:57),0
+8,d15-29243,,ok,34.840551,# Environment (auto-captured 2026-10-15 13:56:57),0
+9,d15-29278,,ok,32.438728,# Environment (auto-captured 2026-10-15 13:56:57),0
+10,d15-29311,,ok,31.578871,# Environment (auto-captured 2026-10-15 13:56:57),0

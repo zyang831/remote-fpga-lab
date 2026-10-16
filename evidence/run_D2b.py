@@ -1,5 +1,5 @@
 """D2b (random 0-5 s inter-run gap, seed 1): python3 run_D2.py model N | bit N   (N excludes the 1 warm-up). Rows -> data/D2-*/runs.csv."""
-import sys, time, random, requests, harness as h
+import os, sys, time, random, requests, harness as h
 R = "/home/fyp-student/edge-ai-demo"; L = "/home/fyp-student/fyp/legacy/ota_test_artifacts_2026-07"
 BITS = [f"{R}/demo/webui/1-bitstream/{n}.core.rbf" for n in ("led-bouncing", "led-johnson", "ghrd", "edge-ai-dla")] + \
        [f"{L}/CoreDLA_NoSoftmax/output_design.core.rbf", f"{L}/CoreDLA_Softmax/output_design.core.rbf"]
@@ -9,7 +9,7 @@ def fresh(need):
     global j
     if (h.status(j)["seconds_left"] or 0) < need: h.finish(j); time.sleep(40); j = h.join()
 def live(): return requests.get(f"{h.BACKEND}/session/model", timeout=5).json().get("name")
-with h.Series(f"D2b-{mode}", env) as s:
+with h.Series(f"{os.environ.get('SERIES', 'D2b')}-{mode}", env) as s:
     s.cleanup(lambda: h.finish(j))
     if mode == "model":
         names = ["flag", "fruit"]

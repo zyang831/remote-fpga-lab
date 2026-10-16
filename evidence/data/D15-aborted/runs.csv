@@ -1,0 +1,3 @@
+index,input,sha256,result,seconds,env,warmup
+0,d15-28684,,ok,35.587855,# Environment (auto-captured 2026-10-15 13:56:57),1
+1,d15-28720,,ok,35.369586,# Environment (auto-captured 2026-10-15 13:56:57),0

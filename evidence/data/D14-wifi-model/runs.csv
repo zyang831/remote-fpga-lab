@@ -1,0 +1,22 @@
+index,input,sha256,result,seconds,env,warmup
+0,flag,,ok,3.704752,# Environment (auto-captured 2026-10-15 13:56:57),1
+1,fruit,,ok,43.843112,# Environment (auto-captured 2026-10-15 13:56:57),0
+2,flag,,ok,35.496720,# Environment (auto-captured 2026-10-15 13:56:57),0
+3,fruit,,ok,39.792921,# Environment (auto-captured 2026-10-15 13:56:57),0
+4,flag,,ok,35.280972,# Environment (auto-captured 2026-10-15 13:56:57),0
+5,fruit,,ok,47.285824,# Environment (auto-captured 2026-10-15 13:56:57),0
+6,flag,,ok,43.536257,# Environment (auto-captured 2026-10-15 13:56:57),0
+7,fruit,,ok,35.252238,# Environment (auto-captured 2026-10-15 13:56:57),0
+8,flag,,ok,35.789446,# Environment (auto-captured 2026-10-15 13:56:57),0
+9,fruit,,ok,37.016233,# Environment (auto-captured 2026-10-15 13:56:57),0
+10,flag,,ok,37.525767,# Environment (auto-captured 2026-10-15 13:56:57),0
+11,fruit,,ok,39.513588,# Environment (auto-captured 2026-10-15 13:56:57),0
+12,flag,,ok,41.540004,# Environment (auto-captured 2026-10-15 13:56:57),0
+13,fruit,,ok,51.909163,# Environment (auto-captured 2026-10-15 13:56:57),0
+14,flag,,ok,47.788614,# Environment (auto-captured 2026-10-15 13:56:57),0
+15,fruit,,ok,45.601575,# Environment (auto-captured 2026-10-15 13:56:57),0
+16,flag,,ok,53.083659,# Environment (auto-captured 2026-10-15 13:56:57),0
+17,fruit,,ok,40.033734,# Environment (auto-captured 2026-10-15 13:56:57),0
+18,flag,,ok,47.548019,# Environment (auto-captured 2026-10-15 13:56:57),0
+19,fruit,,ok,37.008466,# Environment (auto-captured 2026-10-15 13:56:57),0
+20,flag,,ok,37.512059,# Environment (auto-captured 2026-10-15 13:56:57),0
